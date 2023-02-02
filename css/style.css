@@ -1,0 +1,19 @@
+﻿body
+{
+}
+
+.header {
+    font-family: 'Homemade Apple', cursive;
+    height: 130px;
+    background-color: whitesmoke;
+}
+
+.logo {
+    float:left;
+    height:120px;
+    margin-left:20px;
+}
+
+.header h3 {
+    position:relative;
+}
