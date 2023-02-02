@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B72Tl0cJi7/e88UeksK48bGCDR6UrHBGAgo4TKDn7GM=",
+  "Hash": "Pm2lSWQQCsMozZZkLV2air/XOdi0MyO8Wvu1NwWTWhM=",
   "Source": "MichiRefugio",
   "BasePath": "_content/MichiRefugio",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\logomichi.png",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/logomichi.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logomichi.png"
     },
     {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\marcy.jpg",

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\logomichi.png",
+      "PackagePath": "staticwebassets\\img\\logomichi.png"
+    },
+    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\marcy.jpg",
       "PackagePath": "staticwebassets\\img\\marcy.jpg"
     },
