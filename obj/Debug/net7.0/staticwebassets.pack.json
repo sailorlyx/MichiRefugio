@@ -177,6 +177,10 @@
       "PackagePath": "staticwebassets\\img\\michis\\carrousel1.jpg"
     },
     {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\catraprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\michis\\catraprincipal.jpg"
+    },
+    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\fd2a2873-ba13-4bb6-8fc6-24893ced00b4.jpg",
       "PackagePath": "staticwebassets\\img\\michis\\fd2a2873-ba13-4bb6-8fc6-24893ced00b4.jpg"
     },
@@ -189,12 +193,20 @@
       "PackagePath": "staticwebassets\\img\\michis\\kumaprincipal.jpg"
     },
     {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\onyxprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\michis\\onyxprincipal.jpg"
+    },
+    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\sansonprincipal.jpg",
       "PackagePath": "staticwebassets\\img\\michis\\sansonprincipal.jpg"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\sombraprincipal.jpg",
       "PackagePath": "staticwebassets\\img\\michis\\sombraprincipal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\tupuprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\michis\\tupuprincipal.jpg"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\video_366d31b461df4d19ada29778dd78a395.mp4",

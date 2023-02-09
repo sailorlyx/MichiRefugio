@@ -1,5 +1,7 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -12,20 +14,21 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+body {
+    margin-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body {
-  margin-bottom: 60px;
+h2 {
+    font-family: 'Oooh Baby', cursive;
+    text-shadow: 0em 0.1em 0.1em grey;
+    margin-top: 5px;
 }
 
 .logo {
-   
 }
 
-.gatos {
+.gatos1, .gatos2 {
     margin-top: 50px;
     text-align:center;
 }

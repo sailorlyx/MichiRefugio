@@ -1,4 +1,7 @@
-﻿<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+﻿@{
+    ViewData["Title"] = "Michi Refugio";
+}
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -6,7 +9,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <svg class="bd-placeholder-img" src="wwwroot\img\michis\carrousel1.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+            <svg class="bd-placeholder-img" src="img/michis/carrousel1.jpg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
             <div class="container">
                 <div class="carousel-caption text-start">
                     <p>Adoptalos y deja que te llenen de amor (y pelos).</p>
@@ -47,29 +50,55 @@
 <!-- Marketing messaging and featurettes
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
-<div class="todotodito">
+
+<div class="gatos1">
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" src="wwwroot\img\michis\carrousel1.jpg" width="140" height="140" xmlns="img/michis/carrousel1.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <img src="/img/michis/sansonprincipal.jpg" alt="mdo" width="140" height="140" class="rounded-circle">
+                <h2 class="fw-normal">Sansón</h2>
+                <p>el mejor gato del mundo para siempre.</p>
+                <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="/img/michis/sombraprincipal.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <h2 class="fw-normal">Sombra</h2>
                 <p>te matará si te despistas. pero en el fondo es un sol :D</p>
                 <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" src="wwwroot\img\michis\carrousel1.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <img class="bd-placeholder-img rounded-circle" src="img/michis/kumaprincipal.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <h2 class="fw-normal">Kuma</h2>
                 <p>la hermana de Sombra. no sabe dormir en una posición normal, pero la queremos igual.</p>
-                <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <svg class="bd-placeholder-img rounded-circle" src="wwwroot\img\michis\carrousel1.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2 class="fw-normal">Catra</h2>
-                <p>hace mucho miau miau miau miau miau. pero es buena. </p>
                 <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
     </div>
 </div>
+
+<div class="gatos2">
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="/img/michis/onyxprincipal.jpg" alt="mdo" width="140" height="140" class="rounded-circle">
+            <h2 class="fw-normal">Onyx</h2>
+            <p>te muerde si le despiertas :(((</p>
+            <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" src="/img/michis/tupuprincipal.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <h2 class="fw-normal">Tupu</h2>
+            <p>no sabe maullar, pero le encanta juguetear con todo lo que ve.</p>
+            <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="bd-placeholder-img rounded-circle" src="img/michis/catraprincipal.jpg" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <h2 class="fw-normal">Catra</h2>
+            <p>hace mucho miau miau miau miau.</p>
+            <p><a class="btn btn-secondary" href="#">Saber más &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+</div>
+    </div>
+ </div>

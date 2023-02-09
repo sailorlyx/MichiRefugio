@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cMwfIPeezbzRrmZMEZ7mUNhsM7LVYhg8CFG9zutJhQg=",
+  "Hash": "SWy23AldMrPCWw6M1vHCBHdEG5V7qz+73opUpFO5f2w=",
   "Source": "MichiRefugio",
   "BasePath": "_content/MichiRefugio",
   "Mode": "Default",
@@ -459,6 +459,23 @@
       "OriginalItemSpec": "wwwroot\\img\\michis\\carrousel1.jpg"
     },
     {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\catraprincipal.jpg",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/michis/catraprincipal.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\michis\\catraprincipal.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\fd2a2873-ba13-4bb6-8fc6-24893ced00b4.jpg",
       "SourceId": "MichiRefugio",
       "SourceType": "Discovered",
@@ -833,6 +850,23 @@
       "OriginalItemSpec": "wwwroot\\img\\michis\\kumaprincipal.jpg"
     },
     {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\onyxprincipal.jpg",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/michis/onyxprincipal.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\michis\\onyxprincipal.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\sansonprincipal.jpg",
       "SourceId": "MichiRefugio",
       "SourceType": "Discovered",
@@ -865,6 +899,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\michis\\sombraprincipal.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\tupuprincipal.jpg",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/michis/tupuprincipal.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\michis\\tupuprincipal.jpg"
     },
     {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\video_366d31b461df4d19ada29778dd78a395.mp4",
