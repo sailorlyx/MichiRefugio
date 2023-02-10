@@ -24,10 +24,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaWFyc2VzacOzbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Administrador/Documents/DAW/Programación/Proyecto final/MichiRefugio/Views/Home/Inicio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmljaW8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Administrador/Documents/DAW/Programación/Proyecto final/MichiRefugio/Views/Home/PaginaCatra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdpbmFDYXRyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,10 +54,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Administrador/Documents/DAW/Programación/Proyecto final/MichiRefugio/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Administrador/Documents/DAW/Programación/Proyecto final/MichiRefugio/Views/Shared/_Carrousel.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJyb3VzZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Administrador/Documents/DAW/Programación/Proyecto final/MichiRefugio/Views/Shared/_Footer.cshtml]
