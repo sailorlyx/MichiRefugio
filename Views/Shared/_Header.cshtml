@@ -4,7 +4,7 @@
                 <img class="logo" src="~/img/logomichi.png" alt="loguito" width="80">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Colabora</a></li>
+                <li><a href="@Url.Action("Colabora", "Home")" class="nav-link px-2 link-dark">Colabora</a></li>
                 <li><a href="#" class="nav-link px-2 link-dark">Sobre nosotros</a></li>
             </ul>
 
@@ -14,12 +14,12 @@
 
             <div class="dropdown text-end">
                 <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/img/marcy.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                    <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
                 </a>
                 <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("Registro", "Home")">Registrarse</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>

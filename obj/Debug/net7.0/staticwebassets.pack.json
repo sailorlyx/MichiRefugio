@@ -225,6 +225,10 @@
       "PackagePath": "staticwebassets\\img\\novias.jpg"
     },
     {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\usuarionoregistrado.png",
+      "PackagePath": "staticwebassets\\img\\usuarionoregistrado.png"
+    },
+    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

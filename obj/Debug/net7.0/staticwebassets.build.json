@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CMkawPlwBkq0F63jLrywA9eK3b7kjIsimGZgNtQB6FQ=",
+  "Hash": "SPt+j9Pvw45IkiiCR0U2B70ffJ5LpuDGSMLw6dFI0mA=",
   "Source": "MichiRefugio",
   "BasePath": "_content/MichiRefugio",
   "Mode": "Default",
@@ -984,6 +984,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\novias.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\usuarionoregistrado.png",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/usuarionoregistrado.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\usuarionoregistrado.png"
     },
     {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\js\\site.js",

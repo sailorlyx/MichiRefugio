@@ -12,6 +12,16 @@ namespace MichiRefugio.Controllers
             return View();
         }
 
+        public IActionResult Colabora()
+        {
+            return View();
+        }
+
+        public IActionResult Registro()
+        {
+            return View();
+        }
+
         public IActionResult PaginaSanson()
         {
             return View();
