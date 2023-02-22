@@ -32,3 +32,16 @@ h2 {
     margin-top: 50px;
     text-align:center;
 }
+
+.header2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.foto_paginasanson {
+    width:300px;
+    border-radius:50%;
+    box-shadow:5px 2px lightgray;
+}

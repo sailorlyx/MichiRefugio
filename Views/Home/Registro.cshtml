@@ -1,0 +1,15 @@
+﻿@model ActividadLogin.Models.RegistroModel
+@{
+    ViewData["Title"] = "Registro";
+}
+<h2>¡Regístrate! &#10047;</h2>
+@using (Html.BeginForm("Registro", "Registro", FormMethod.Post))
+{
+    <p>Nombre: @Html.TextBoxFor(modeloregistro => modeloregistro.nombre)</p>
+    <p>Apellidos: @Html.TextBoxFor(modeloregistro => modeloregistro.apellidos)</p>
+    <p>Direccion: @Html.TextBoxFor(modeloregistro => modeloregistro.direccion)</p>
+    <p>Email: @Html.TextBoxFor(modeloregistro => modeloregistro.email)</p>
+    <p>Contraseña: @Html.PasswordFor(modeloregistro => modeloregistro.contraseña)</p>
+
+    <input type="submit" name="iniciarsesion" value="Enviar">
+}
