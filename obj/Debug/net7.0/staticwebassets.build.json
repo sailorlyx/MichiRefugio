@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SWy23AldMrPCWw6M1vHCBHdEG5V7qz+73opUpFO5f2w=",
+  "Hash": "CMkawPlwBkq0F63jLrywA9eK3b7kjIsimGZgNtQB6FQ=",
   "Source": "MichiRefugio",
   "BasePath": "_content/MichiRefugio",
   "Mode": "Default",
@@ -117,6 +117,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\c22c85b36e7eaf29ae067e768128ae6d.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\header1.png",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/header1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\header1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\header2.png",
+      "SourceId": "MichiRefugio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\",
+      "BasePath": "_content/MichiRefugio",
+      "RelativePath": "img/header2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\header2.png"
     },
     {
       "Identity": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\logomichi.png",
