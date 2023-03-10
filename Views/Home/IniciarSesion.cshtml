@@ -12,7 +12,13 @@
 
 @using (Html.BeginForm("IniciarSesion", "Usuario", FormMethod.Post))
 {
-    <p>Email: @Html.TextBoxFor(modeloinicio => modeloinicio.usuario)</p>
-    <p>Contraseña: @Html.PasswordFor(modeloinicio => modeloinicio.contra)</p>
+    <p>
+        Introduce tu email: @Html.TextBoxFor(modelo => modelo.usuario, new {@class = "form-control", @id="floatingInput"})
+        @Html.ValidationMessageFor(modelo => modelo.usuario)
+    </p>
+    <p>
+        Introduce tu contraseña: @Html.PasswordFor(modelo => modelo.contra, new {@class = "form-control", @id="floatingInput"})
+        @Html.ValidationMessageFor(modelo => modelo.contra)
+    </p>
     <input class="w-100 btn btn-lg btn-secondary" type="submit" name="iniciarsesion" value="Iniciar sesión">
 }
