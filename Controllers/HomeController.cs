@@ -27,6 +27,27 @@ namespace MichiRefugio.Controllers
             return View();
         }
 
+        public IActionResult IniciarSesion()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult IniciarSesion(UsuarioModel usuarioModel)
+        {
+            if (ModelState.IsValid)
+            {
+                ViewBag.Mensaje = "ta bien c:";
+                return View("Index");
+            }
+            else
+            {
+                ViewBag.Mensaje = "ta mal :c";
+                return View("Index", usuarioModel);
+            }
+
+        }
+
         public IActionResult PaginaSanson()
         {
             return View();

@@ -1,0 +1,18 @@
+﻿@model MichiRefugio.Models.UsuarioModel
+@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+@if (ViewBag.Mensaje != null)
+{
+    @ViewBag.Mensaje
+    ;
+}
+
+<img class="mb-4" src="/img/icocat.png" alt="" width="80" height="70">
+
+@using (Html.BeginForm("IniciarSesion", "Usuario", FormMethod.Post))
+{
+    <p>Email: @Html.TextBoxFor(modeloinicio => modeloinicio.usuario)</p>
+    <p>Contraseña: @Html.PasswordFor(modeloinicio => modeloinicio.contra)</p>
+    <input class="w-100 btn btn-lg btn-secondary" type="submit" name="iniciarsesion" value="Iniciar sesión">
+}

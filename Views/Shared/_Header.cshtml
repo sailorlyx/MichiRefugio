@@ -3,9 +3,9 @@
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <img class="logo" src="~/img/logomichi.png" alt="loguito" width="80">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+                <li><a href="@Url.Action("Index", "Home")" class="nav-link px-2 link-secondary">Inicio</a></li>
                 <li><a href="@Url.Action("Colabora", "Home")" class="nav-link px-2 link-dark">Colabora</a></li>
-                <li><a href="#" class="nav-link px-2 link-dark">Sobre nosotros</a></li>
+                <li><a href="@Url.Action("SobreNosotros", "Home")" class="nav-link px-2 link-dark">Sobre nosotros</a></li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -19,7 +19,7 @@
                 <ul class="dropdown-menu text-small">
                     <li><a class="dropdown-item" href="@Url.Action("Registro", "Home")">Registrarse</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                    <li><a class="dropdown-item" href="@Url.Action("IniciarSesion", "Home")">Iniciar sesión</a></li>
                 </ul>
             </div>
         </div>
