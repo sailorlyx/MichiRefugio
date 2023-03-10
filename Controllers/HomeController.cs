@@ -17,6 +17,11 @@ namespace MichiRefugio.Controllers
             return View();
         }
 
+        public IActionResult SobreNosotros()
+        {
+            return View();
+        }
+
         public IActionResult Registro()
         {
             return View();
