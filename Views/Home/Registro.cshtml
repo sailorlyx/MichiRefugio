@@ -2,8 +2,87 @@
 @{
     ViewData["Title"] = "Registro";
 }
-<h2>¡Regístrate! &#10047;</h2>
-@using (Html.BeginForm("Registro", "Registro", FormMethod.Post))
+<div class="container">
+    <div class="row py-5 mt-4 align-items-center">
+        <!-- For Demo Purpose -->
+        <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+            <img class="michiregistro" src="https://img.freepik.com/premium-vector/continuous-one-line-drawing-cat-sitting-front-single-line-art-single-line-cat-contour-design_499433-295.jpg?w=2000" alt="" class="img-fluid mb-3 d-none d-md-block">
+            <h1 class="h1registro">Regístrate</h1>
+            <p class="font-italic text-muted mb-0">Crea tu cuenta y empieza a adoptar a nuestros adorables mininos.</p>
+        </div>
+        <!-- Registeration Form -->
+
+        <div class="col-md-7 col-lg-6 ml-auto">
+            <form action="#">
+                <div class="row">
+
+                    <!-- First Name -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-user text-muted"></i>
+                        </div>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Last Name -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-user text-muted"></i>
+                        </div>
+                        <input id="Apellidos" type="text" name="Apellidos" placeholder="Apellidos" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Email Address -->
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-envelope text-muted"></i>
+                        </div>
+                        <input id="Email" type="email" name="Email" placeholder="Email" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="input-group col-lg-12 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-phone-square text-muted"></i>
+                        </div>
+                        <input id="Teléfono" type="tel" name="Teléfono" placeholder="Teléfono" class="form-control bg-white border-md border-left-0 pl-3">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-lock text-muted"></i>
+                        </div>
+                        <input id="Contraseña" type="password" name="Contraseña" placeholder="Contraseña" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Password Confirmation -->
+                    <div class="input-group col-lg-6 mb-4">
+                        <div class="input-group-prepend">
+                                <i class="fa fa-lock text-muted"></i>
+                        </div>
+                        <input id="Contraseñaconfirmacion" type="password" name="Contraseñaconfirmacion" placeholder="Confirma tu contraseña" class="form-control bg-white border-left-0 border-md">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group col-lg-12 mx-auto mb-0">
+                        <a href="#" class="btn btn-secondary btn-block py-2">
+                            <span class="font-weight-bold">Crear cuenta</span>
+                        </a>
+                    </div>
+
+                    <!-- Already Registered -->
+                    <div class="text-center w-100">
+                        <p class="text-muted font-weight-bold">¿Ya tienes cuenta? <a href="@Url.Action("IniciarSesion", "Home")" class="text-secondary ml-2">Inicia sesión</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@*@using (Html.BeginForm("Registro", "Registro", FormMethod.Post))
 {
     <p>Nombre: @Html.TextBoxFor(modeloregistro => modeloregistro.nombre)</p>
     <p>Apellidos: @Html.TextBoxFor(modeloregistro => modeloregistro.apellidos)</p>
@@ -12,4 +91,4 @@
     <p>Contraseña: @Html.PasswordFor(modeloregistro => modeloregistro.contraseña)</p>
 
     <input type="submit" name="iniciarsesion" value="Enviar">
-}
+}*@
