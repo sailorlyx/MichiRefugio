@@ -53,6 +53,31 @@ namespace MichiRefugio.Controllers
             return View();
         }
 
+        public IActionResult PaginaSombra()
+        {
+            return View();
+        }
+
+        public IActionResult PaginaKuma()
+        {
+            return View();
+        }
+
+        public IActionResult PaginaOnyx()
+        {
+            return View();
+        }
+
+        public IActionResult PaginaTupu()
+        {
+            return View();
+        }
+
+        public IActionResult PaginaCatra()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

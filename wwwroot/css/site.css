@@ -46,9 +46,41 @@ h2 {
     box-shadow:5px 2px lightgray;
 }
 
-.michiregistro {
-    width:450px;
+.foto_paginaonyx {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px lightgray;
+}
 
+.foto_paginacatra {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px lightgray;
+}
+
+.foto_paginakuma {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px lightgray;
+}
+
+.foto_paginasombra {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px lightgray;
+}
+
+.foto_paginatupu {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 2px lightgray;
+}
+
+
+
+
+.michiregistro {
+    width: 450px;
 }
 
 .h1registro {
