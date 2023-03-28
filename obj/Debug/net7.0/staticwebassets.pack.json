@@ -13,20 +13,8 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\angel.png",
-      "PackagePath": "staticwebassets\\img\\angel.png"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\bubbline-princess-bubbleg-gum.gif",
-      "PackagePath": "staticwebassets\\img\\bubbline-princess-bubbleg-gum.gif"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\c22c85b36e7eaf29ae067e768128ae6d.webp",
-      "PackagePath": "staticwebassets\\img\\c22c85b36e7eaf29ae067e768128ae6d.webp"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\cris.png",
-      "PackagePath": "staticwebassets\\img\\cris.png"
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\catra\\catraprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\catra\\catraprincipal.jpg"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\header1.png",
@@ -37,8 +25,8 @@
       "PackagePath": "staticwebassets\\img\\header2.png"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\lili.png",
-      "PackagePath": "staticwebassets\\img\\lili.png"
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\kuma\\kumaprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\kuma\\kumaprincipal.jpg"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\logomichi.png",
@@ -201,10 +189,6 @@
       "PackagePath": "staticwebassets\\img\\michis\\carrousel1.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\catraprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\catraprincipal.jpg"
-    },
-    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\fd2a2873-ba13-4bb6-8fc6-24893ced00b4.jpg",
       "PackagePath": "staticwebassets\\img\\michis\\fd2a2873-ba13-4bb6-8fc6-24893ced00b4.jpg"
     },
@@ -213,52 +197,48 @@
       "PackagePath": "staticwebassets\\img\\michis\\filtered-59A48AA9-996E-4786-88B4-B85F99BF998F.mp4"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\kumaprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\kumaprincipal.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\onyxprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\onyxprincipal.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\sansonprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\sansonprincipal.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\sombraprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\sombraprincipal.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\tupuprincipal.jpg",
-      "PackagePath": "staticwebassets\\img\\michis\\tupuprincipal.jpg"
-    },
-    {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michis\\video_366d31b461df4d19ada29778dd78a395.mp4",
       "PackagePath": "staticwebassets\\img\\michis\\video_366d31b461df4d19ada29778dd78a395.mp4"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michisobrenosotros.png",
-      "PackagePath": "staticwebassets\\img\\michisobrenosotros.png"
-    },
-    {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\michisobrenosottos.avif",
-      "PackagePath": "staticwebassets\\img\\michisobrenosottos.avif"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\novias.jpg",
       "PackagePath": "staticwebassets\\img\\novias.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros.png",
-      "PackagePath": "staticwebassets\\img\\sobrenosotros.png"
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\onyx\\onyxprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\onyx\\onyxprincipal.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros2.jpg",
-      "PackagePath": "staticwebassets\\img\\sobrenosotros2.jpg"
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sanson\\sansonprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\sanson\\sansonprincipal.jpg"
     },
     {
-      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\ubi.jpg",
-      "PackagePath": "staticwebassets\\img\\ubi.jpg"
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros\\angel.png",
+      "PackagePath": "staticwebassets\\img\\sobrenosotros\\angel.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros\\cris.png",
+      "PackagePath": "staticwebassets\\img\\sobrenosotros\\cris.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros\\lili.png",
+      "PackagePath": "staticwebassets\\img\\sobrenosotros\\lili.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros\\michisobrenosotros.png",
+      "PackagePath": "staticwebassets\\img\\sobrenosotros\\michisobrenosotros.png"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sobrenosotros\\ubi.jpg",
+      "PackagePath": "staticwebassets\\img\\sobrenosotros\\ubi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\sombra\\sombriprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\sombra\\sombriprincipal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\tupu\\tupuprincipal.jpg",
+      "PackagePath": "staticwebassets\\img\\tupu\\tupuprincipal.jpg"
     },
     {
       "Id": "C:\\Users\\Administrador\\Documents\\DAW\\Programación\\Proyecto final\\MichiRefugio\\wwwroot\\img\\usuarionoregistrado.png",

@@ -41,39 +41,45 @@ h2 {
 }
 
 .foto_paginasanson {
-    width:300px;
-    border-radius:50%;
-    box-shadow:5px 2px lightgray;
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
 }
 
 .foto_paginaonyx {
     width: 300px;
-    border-radius: 50%;
+    border-radius: 3%;
     box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
 }
 
 .foto_paginacatra {
     width: 300px;
-    border-radius: 50%;
-    box-shadow: 5px 2px lightgray;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom: 10px;
 }
 
 .foto_paginakuma {
     width: 300px;
-    border-radius: 50%;
-    box-shadow: 5px 2px lightgray;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom: 10px;
 }
 
 .foto_paginasombra {
     width: 300px;
-    border-radius: 50%;
-    box-shadow: 5px 2px lightgray;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom:10px;
 }
 
 .foto_paginatupu {
     width: 300px;
-    border-radius: 50%;
+    border-radius: 3%;
     box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
 }
 
 
