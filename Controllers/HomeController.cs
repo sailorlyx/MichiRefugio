@@ -17,11 +17,6 @@ namespace MichiRefugio.Controllers
             return View();
         }
 
-        public IActionResult ContactaPopUp() 
-        { 
-            return View(); 
-        }
-
         public IActionResult SobreNosotros()
         {
             return View();
