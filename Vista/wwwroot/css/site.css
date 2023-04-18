@@ -1,0 +1,117 @@
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-family: 'Oooh Baby', cursive;
+    text-shadow: 0em 0.1em 0.1em grey;
+    margin-top: 5px;
+}
+
+.logo {
+}
+
+.gatos1, .gatos2 {
+    margin-top: 50px;
+    text-align:center;
+}
+
+.header2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.foto_paginasanson {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
+}
+
+.foto_paginaonyx {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
+}
+
+.foto_paginacatra {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom: 10px;
+}
+
+.foto_paginakuma {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom: 10px;
+}
+
+.foto_paginasombra {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 3px 2px lightgray;
+    margin-bottom:10px;
+}
+
+.foto_paginatupu {
+    width: 300px;
+    border-radius: 3%;
+    box-shadow: 5px 2px lightgray;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+
+.contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+    text-align:center;
+}
+
+.michiregistro {
+    width: 450px;
+}
+
+.h1registro {
+    text-align:center;
+}
