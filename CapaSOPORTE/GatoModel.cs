@@ -17,6 +17,10 @@ namespace CapaSOPORTE
         public bool adoptado { get; set; }
         public string foto { get; set; }
 
+        public string Gusta { get; set; }
+        public string Odia { get; set; }
+
+
         public GatoModel(DataRow row)
         {
             id = row.Field<int>("id");
@@ -26,6 +30,8 @@ namespace CapaSOPORTE
             descripcion = row.Field<string>("descripcion");
             adoptado = Utilidades.TinyintABool(row.Field<byte>("adoptado"));
             foto = row.Field<string>("foto");
+            Gusta = row.Field<string>("Gusta");
+            Odia = row.Field<string>("Odia");
         }
     }
 }

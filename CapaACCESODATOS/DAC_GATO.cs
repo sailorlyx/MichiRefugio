@@ -13,7 +13,7 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerGatos()
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, edad, genero, descripcion, adoptado, foto "
+            comando.CommandText = "SELECT id, nombre, edad, genero, descripcion, adoptado, foto, Gusta, Odia "
                 + " FROM GATO";
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
@@ -21,7 +21,7 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerGato(int id)
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, edad, genero, descripcion, adoptado, foto"
+            comando.CommandText = "SELECT id, nombre, edad, genero, descripcion, adoptado, foto, Gusta, Odia"
                 + " FROM GATO"
                 + " WHERE id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);

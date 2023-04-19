@@ -15,7 +15,7 @@
                         <div class="mb-4">
                             <h3>Iniciar sesión</h3>
                         </div>
-                        @using (Html.BeginForm("IniciarSesion", "Home", FormMethod.Post))
+                        @using (Html.BeginForm("IniciarSesion", "InicioSesion", FormMethod.Post))
                         {
                                 <div class="form-group first">
                                     @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email", @style="margin:10px 0"})

@@ -11,14 +11,8 @@
                         <h3 class="mb-3">@item.nombre</h3>
                         <img class="fotoFicha" src="~/@item.foto" alt="michi salvaje debería aparecer" />
                         <p>@item.descripcion</p>
-                    @foreach (var gusta in Model.listaGustas)
-                    {
-                        <p>&#9786; Cosas que le gustan: @gusta.descripcion</p>
-                    }
-                    @foreach (var odia in Model.listaOdias)
-                    {
-                        <p>&#10008; Cosas que no le gustan: @odia.descripcion</p>
-                    }
+                        <p>&#9786; Cosas que le gustan: @item.Gusta</p>
+                        <p>&#10008; Cosas que no le gustan: @item.Odia</p>
                     </div>
                 }
         
