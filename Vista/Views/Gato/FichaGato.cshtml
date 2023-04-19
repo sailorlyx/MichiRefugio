@@ -5,24 +5,16 @@
 <div class="content">
     <div class="container">
         <div class="row">
-            @if (Model.listaGatos != null && Model.listaGustas != null)
-            {
-                @foreach (var item in Model.listaGatos.Zip(Model.listaGustas, (gato, gusta) => new { Gato = gato, Gusta = gusta }))
+                @foreach (var item in Model.listaGatos)
                 {
                     <div class="col-md-5 mr-auto">
-                        <h3 class="mb-3">@item.Gato.nombre</h3>
-                        <img class="fotoFicha" src="~/@item.Gato.foto" alt="michi salvaje debería aparecer" />
-                        <p>@item.Gato.descripcion</p>
-                        <p>Cosas que le encantan: @item.Gusta.descripcion</p>
+                        <h3 class="mb-3">@item.nombre</h3>
+                        <img class="fotoFicha" src="~/@item.foto" alt="michi salvaje debería aparecer" />
+                        <p>@item.descripcion</p>
                     </div>
                 }
-            }
-            else
-            {
-                <p>No se pudo cargar la información de los gatos o sus gustos.</p>
-            }
-            
-            @*ªªªªªªªªªªªªaAaaaAAaA por que da nuuuuuuuuuuuulllllll*@
+
+                @*a tomar por culo *@
         
             <div class="col-md-6">
                 <div class="box">
