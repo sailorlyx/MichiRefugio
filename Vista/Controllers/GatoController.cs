@@ -34,5 +34,15 @@ namespace Vista.Controllers
         {
             listas.listaGustas = DOM_GUSTA.ObtenerGustas();
         }
+
+        public ActionResult Registro()
+        {
+            return View();
+        }
+
+        public ActionResult IniciarSesion()
+        {
+            return View();
+        }
     }
 }

@@ -6,7 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//ESTABA EL SEÑOR DOM GAAAATOOOO
 namespace CapaDOM
 {
     public class DOM_GUSTA

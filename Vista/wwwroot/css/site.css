@@ -40,42 +40,7 @@ h2 {
     width: 100%;
 }
 
-.foto_paginasanson {
-    width: 300px;
-    border-radius: 3%;
-    box-shadow: 5px 2px lightgray;
-    margin-bottom: 10px;
-}
-
-.foto_paginaonyx {
-    width: 300px;
-    border-radius: 3%;
-    box-shadow: 5px 2px lightgray;
-    margin-bottom: 10px;
-}
-
-.foto_paginacatra {
-    width: 300px;
-    border-radius: 3%;
-    box-shadow: 3px 2px lightgray;
-    margin-bottom: 10px;
-}
-
-.foto_paginakuma {
-    width: 300px;
-    border-radius: 3%;
-    box-shadow: 3px 2px lightgray;
-    margin-bottom: 10px;
-}
-
-.foto_paginasombra {
-    width: 300px;
-    border-radius: 3%;
-    box-shadow: 3px 2px lightgray;
-    margin-bottom:10px;
-}
-
-.foto_paginatupu {
+.fotoFicha {
     width: 300px;
     border-radius: 3%;
     box-shadow: 5px 2px lightgray;
