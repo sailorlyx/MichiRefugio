@@ -1,0 +1,36 @@
+use MichiRefugioPrueba
+
+create table Gato(
+ID int primary key identity(1,1) not null
+, Nombre varchar(20) not null
+, Edad int not null
+, Genero char not null
+, Descripcion varchar(255) not null
+, Adoptado bit not null
+);
+
+insert into Gato
+values
+('Sansón', '8', 'M', 'el mejor gato del mundo para siempre', 'false'),
+('Sombra', '3', 'F', 'es buena a veces', 'false'),
+('Kuma', '3', 'F', 'la hermana gemela de sombri', 'false'),
+('Onyx', '2', 'M', 'si le despiertas te muerde', 'false'),
+('Tupu', '7', 'F', 'no sabe maullar la pobre', 'false'),
+('Catra', '1', 'F', 'la hijita de tupu', 'false')
+
+create table Usuario(
+ID int primary key identity(1,1) not null
+, Nombre varchar(20) not null
+, PrimerApellido varchar(20) not null
+, SegundoApellido varchar(20)
+, Email varchar(100) not null check (Email LIKE '%_@__%.__%')
+, Contra varchar(8) not null check (Contra like '%[A-Z]%[a-z]%[0-9a-zA-Z]{6,}%')
+, Tlf int not null check (Tlf like '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
+, Admin bit not null
+);
+
+insert into Usuario
+values
+('Lili', 'Sailor', 'Moon', 'lidiaechuacas@hotmail.com','Lalunaquebonicaes20','684097811', 'true'),
+('Ángel', 'Sailor', 'Jupiter', 'angelcalculadora@hotmail.com', 'Losforsmolan19', '698657485', 'true'),
+('Aloy', 'Horizon', 'Random', 'elhorizonyanocuela@hotmail.com', 'Aloymimujer18', '676762626', 'false')

@@ -18,6 +18,8 @@ namespace Vista.Controllers
         public ActionResult FichaGato(int id) 
         {
             ObtenerGato(id);
+            ObtenerGusta(id);
+            ObtenerOdia(id);
             return View(listas);
         }
 
@@ -34,6 +36,29 @@ namespace Vista.Controllers
         {
             listas.listaGustas = DOM_GUSTA.ObtenerGustas();
         }
+
+        public void ObtenerGusta(int id)
+        {
+            listas.listaGustas = DOM_GUSTA.ObtenerGusta(id);
+        }
+
+        public void ObtenerOdias()
+        {
+            listas.listaOdias = DOM_ODIA.ObtenerOdias();
+        }
+        public void ObtenerOdia(int id)
+        {
+            listas.listaOdias = DOM_ODIA.ObtenerOdia(id);
+        }
+        public void ObtenerUsuarios()
+        {
+            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuarios();
+        }
+        public void ObtenerUsuario(int id)
+        {
+            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuario(id);
+        }
+
 
         public ActionResult Registro()
         {
