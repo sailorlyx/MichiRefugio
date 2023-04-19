@@ -38,6 +38,20 @@ namespace CapaDOM
 
                 return lista;
             }
-    
+
+            public static List<OdiaModel> ObtenerOdiaGato(int id)
+            {
+            DataTable dt = DAC_ODIA.ObtenerOdiaGato(id);
+
+            List<OdiaModel> lista = new List<OdiaModel>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                lista.Add(new OdiaModel(row));
+            }
+
+            return lista;
+            }   
+
     }
 }

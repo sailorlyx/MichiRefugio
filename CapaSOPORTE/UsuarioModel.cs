@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,13 @@ namespace CapaSOPORTE
         public string nombre { get; set; }
         public string apellido { get; set; }
         public string apellido2 { get; set; }
+
+        [Required(ErrorMessage = "Email no válido")]
+        [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Correo electrónico incorrecto")]
         public string email { get; set; }
+
+        [Required(ErrorMessage = "Contraseña no válida")]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{8,}$", ErrorMessage = "Contraseña no válida")]
         public string contraseña { get; set; }
         public int telefono { get; set; }
         public bool admin { get; set; }

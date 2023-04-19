@@ -22,13 +22,25 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerGusta(int id)
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT * "
+            comando.CommandText = "SELECT id, descripcion"
                 + " FROM GATO, GUSTA_GATO, GUSTA"
                 + " WHERE GATO.id =  GUSTA.idGato"
                 + " AND GUSTA.id = GUSTA_GATO.idGusta"
-                + " AND Gato.id = " + id;
+                + " AND GATO.id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
+
+        public static DataTable ObtenerGustaGato(int id)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "SELECT id, descripcion"
+                + " FROM GATO, GUSTA_GATO, GUSTA"
+                + " WHERE GATO.id =  GUSTA.idGato"
+                + " AND GUSTA.id = GUSTA_GATO.idGusta"
+                + " AND GATO.id = " + id;
+            return MetodosDatos.EjecutarComandoSelect(comando);
+        }
+
     }
 
 }

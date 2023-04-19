@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CapaSOPORTE.UsuarioModel
+@{
     ViewData["Title"] = "Iniciar sesión";
 }
 
@@ -14,17 +15,18 @@
                         <div class="mb-4">
                             <h3>Iniciar sesión</h3>
                         </div>
-                        <form action="#" method="post">
-                            <div class="form-group first">
-                                <label for="username">Email</label>
-                                <input type="text" class="form-control" id="email">
-                            </div>
-                            <div class="form-group last mb-4">
-                                <label for="password">Contraseña</label>
-                                <input type="password" class="form-control" id="contraseña">
-                            </div>
-                            <input type="submit" value="Entrar" class="btn btn-block btn-secondary">
-                        </form>
+                        @using (Html.BeginForm("IniciarSesion", "Home", FormMethod.Post))
+                        {
+                                <div class="form-group first">
+                                    @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email", @style="margin:10px 0"})
+                                    @Html.ValidationMessageFor(modelo => modelo.email)
+                                </div>
+                                <div class="form-group last mb-4">
+                                @Html.PasswordFor(modelo => modelo.contraseña, new {@class = "form-control", @id="floatingInput", @placeholder="Contraseña", @style="margin:10px 0"})
+                                @Html.ValidationMessageFor(modelo => modelo.contraseña)
+                                </div>
+                                <input type="submit" value="Entrar" class="btn btn-block btn-secondary">
+                        }
                         <div class="text-center w-100">
                             <p class="text-muted font-weight-bold">¿No tienes cuenta todavía? <a href="@Url.Action("Registro", "Home")" class="text-secondary ml-2"> ¡Regístrate!</a></p>
                         </div>
@@ -34,16 +36,3 @@
         </div>
     </div>
 </div>
-
-@*@using (Html.BeginForm("IniciarSesion", "Usuario", FormMethod.Post))
-{
-    <p>
-        Introduce tu email: @Html.TextBoxFor(modelo => modelo.usuario, new {@class = "form-control", @id="floatingInput"})
-        @Html.ValidationMessageFor(modelo => modelo.usuario)
-    </p>
-    <p>
-        Introduce tu contraseña: @Html.PasswordFor(modelo => modelo.contra, new {@class = "form-control", @id="floatingInput"})
-        @Html.ValidationMessageFor(modelo => modelo.contra)
-    </p>
-    <input class="w-100 btn btn-lg btn-secondary" type="submit" name="iniciarsesion" value="Iniciar sesión">
-}*@

@@ -21,13 +21,25 @@ namespace CapaACCESODATOS
             public static DataTable ObtenerOdia(int id)
             {
                 SqlCommand comando = MetodosDatos.CrearComando();
-                comando.CommandText = "SELECT * "
+                comando.CommandText = "SELECT id, descripcion"
                 + " FROM GATO, ODIA_GATO, ODIA"
                 + " WHERE GATO.id =  ODIA.idGato"
                 + " AND ODIA.id = ODIA_GATO.idOdia"
-                + " AND Gato.id = " + id;
+                + " AND GATO.id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
             }
-    
+           
+            public static DataTable ObtenerOdiaGato(int id)
+            {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "SELECT id, descripcion"
+            + " FROM GATO, ODIA_GATO, ODIA"
+            + " WHERE GATO.id =  ODIA.idGato"
+            + " AND ODIA.id = ODIA_GATO.idOdia"
+            + " AND GATO.id = " + id;
+            return MetodosDatos.EjecutarComandoSelect(comando);
+        }
+
+
     }
 }

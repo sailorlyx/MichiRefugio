@@ -43,6 +43,11 @@ namespace Vista.Controllers
             listas.listaGustas = DOM_GUSTA.ObtenerGusta(id);
         }
 
+        public void ObtenerGustaGato(int id)
+        {
+            listas.listaGustas = DOM_GUSTA.ObtenerGustaGato(id);
+        }
+
         public void ObtenerOdias()
         {
             listas.listaOdias = DOM_ODIA.ObtenerOdias();
@@ -51,6 +56,12 @@ namespace Vista.Controllers
         {
             listas.listaOdias = DOM_ODIA.ObtenerOdia(id);
         }
+
+        public void ObtenerOdiaGato(int id)
+        {
+            listas.listaOdias = DOM_ODIA.ObtenerOdiaGato(id);
+        }
+
         public void ObtenerUsuarios()
         {
             listas.listaUsuarios = DOM_USUARIO.ObtenerUsuarios();

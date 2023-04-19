@@ -38,5 +38,19 @@ namespace CapaDOM
 
             return lista;
         }
+        public static List<GustaModel> ObtenerGustaGato(int id)
+        {
+            DataTable dt = DAC_GUSTA.ObtenerGustaGato(id);
+
+            List<GustaModel> lista = new List<GustaModel>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                lista.Add(new GustaModel(row));
+            }
+
+            return lista;
+        }
+
     }
 }

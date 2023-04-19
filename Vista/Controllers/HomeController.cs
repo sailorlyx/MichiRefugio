@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CapaSOPORTE;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Vista.Controllers
@@ -31,17 +32,17 @@ namespace Vista.Controllers
             return View();
         }
 
-        //public ActionResult IniciarSesion(UsuarioModel usuarioModel)
+        //public ActionResult IniciarSesion(UsuarioModel UsuarioModel)
         //{
         //    if (ModelState.IsValid)
         //    {
-        //        ViewBag.Mensaje = "ta bien c:";
-        //        return View("Index");
+        //        ViewBag.Mensaje = "¡Bienvenid@!";
+        //        return View();
         //    }
         //    else
         //    {
-        //        ViewBag.Mensaje = "ta mal :c";
-        //        return View("Index", usuarioModel);
+        //        ViewBag.Mensaje = "Correo electrónico y/o contraseña incorrectos";
+        //        return View("IniciarSesion", UsuarioModel);
         //    }
 
         //}
