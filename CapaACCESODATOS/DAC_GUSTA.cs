@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic;
 
 namespace CapaACCESODATOS
 {
@@ -21,10 +22,13 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerGusta(int id)
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, descripcion"
-                + " FROM GUSTA"
-                + " WHERE id = " + id;
+            comando.CommandText = "SELECT * "
+                + " FROM GATO, GUSTA_GATO, GUSTA"
+                + " WHERE GATO.id =  GUSTA.idGato"
+                + " AND GUSTA.id = GUSTA_GATO.idGusta"
+                + " AND Gato.id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
     }
+
 }

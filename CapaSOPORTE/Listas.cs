@@ -12,5 +12,6 @@ namespace CapaSOPORTE
         public List<GustaModel> listaGustas { get; set; }
         public List<OdiaModel> listaOdias { get; set; }
         public List<UsuarioModel> listaUsuarios { get; set; }
+        public List<FormularioModel> listaFormulario { get; set; }
     }
 }

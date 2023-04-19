@@ -12,6 +12,7 @@ namespace Vista.Controllers
         {
             ObtenerGatos();
             ObtenerGustas();
+            ObtenerOdias();
             return View(listas);
         }
 
@@ -54,11 +55,16 @@ namespace Vista.Controllers
         {
             listas.listaUsuarios = DOM_USUARIO.ObtenerUsuarios();
         }
+
         public void ObtenerUsuario(int id)
         {
             listas.listaUsuarios = DOM_USUARIO.ObtenerUsuario(id);
         }
 
+        public void ObtenerFormulario()
+        {
+            listas.listaFormulario = DOM_FORMULARIO.ObtenerFormulario();
+        }
 
         public ActionResult Registro()
         {
