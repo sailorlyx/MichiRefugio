@@ -33,3 +33,21 @@ window.onclick = function (event) {
         segundoModal.style.display = "none";
     }
 }
+
+var tercerModal = document.getElementById('tercerModal');
+var botonModalTres = document.getElementById('abrirTercerModal');
+var cerrarModal = document.getElementsByClassName("cerrarModal")[2];
+
+botonModalTres.onclick = function () {
+    tercerModal.style.display = "block";
+}
+
+cerrarModal.onclick = function () {
+    tercerModal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == tercerModal) {
+        tercerModal.style.display = "none";
+    }
+}
