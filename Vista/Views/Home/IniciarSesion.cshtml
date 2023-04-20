@@ -2,8 +2,9 @@
 @{
     ViewData["Title"] = "Iniciar sesión";
 }
-<div class="content">
+    <div class="content">
     <div class="container">
+
         <div class="row">
             <div class="col-md-6">
                 <img src="https://img.freepik.com/premium-vector/continuous-line-drawing-cute-cat-cat-one-line-drawing-minimalist-design_266639-2686.jpg?w=2000" alt="Image" class="img-fluid">
@@ -14,7 +15,7 @@
                         <div class="mb-4">
                             <h3>Iniciar sesión</h3>
                         </div>
-                        @using (Html.BeginForm("IniciarSesion", "InicioSesion", FormMethod.Post))
+                        @using (Html.BeginForm("InicioSesion", "InicioSesion", FormMethod.Post))
                         {
                                 <div class="form-group first">
                                     @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email", @style="margin:10px 0"})

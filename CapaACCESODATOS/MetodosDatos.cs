@@ -69,6 +69,27 @@ namespace CapaACCESODATOS
             { comando.Connection.Close(); }
             return tabla;
         }
+
+        //public static DataTable EjecutarComandoInsert(SqlCommand comando)
+        //{
+        //    DataTable tabla = new DataTable();
+        //    try
+        //    {
+        //        comando.Connection.Open();
+        //        SqlDataAdapter adaptador = new SqlDataAdapter();
+        //        adaptador.SelectCommand = comando;
+        //        adaptador.Fill(tabla);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        DataTable dt = new DataTable();
+        //        return dt;
+        //    }
+        //    finally
+        //    { comando.Connection.Close(); }
+        //    return tabla;
+        //}
+
         public static string CreateConnection()
         {
             var constructor = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
@@ -78,4 +99,5 @@ namespace CapaACCESODATOS
             return bbdd;
         }
     }
+
 }

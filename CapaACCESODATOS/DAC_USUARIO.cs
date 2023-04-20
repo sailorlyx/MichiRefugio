@@ -27,38 +27,6 @@ namespace CapaACCESODATOS
                 + " WHERE id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
-
-        //PREGUNTAR A ANGEL/CRIS/alguien pofavo
-
-        //public bool ValidarUsuario(string email, string contraseña)
-        //{
-        //    bool usuarioValido = false;
-
-        //    try
-        //    {
-        //        conexion.Open();
-        //        SqlCommand comando = MetodosDatos.CrearComando();
-        //        comando.CommandText = "SELECT * FROM USUARIO "
-        //            + " WHERE email=@email" 
-        //            + " AND contraseña=@contraseña" + conexion;
-        //        return MetodosDatos.EjecutarComandoSelect(comando);
-
-        //    }
-        //    catch (MySqlException ex)
-        //    {
-        //        Console.WriteLine("Email y/o contraseña incorrectos " + ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        if (conexion.State == ConnectionState.Open)
-        //        {
-        //            conexion.Close();
-        //        }
-        //    }
-
-        //    return usuarioValido;
-
-        //}
     }
 
 }
