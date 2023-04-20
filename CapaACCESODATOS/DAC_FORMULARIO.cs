@@ -12,5 +12,7 @@ namespace CapaACCESODATOS
                 + " FROM FORMULARIO";
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
+
+        //preguntar como hacer esto porque.... madre mia....
     }
 }

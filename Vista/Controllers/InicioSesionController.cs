@@ -1,49 +1,40 @@
-﻿//using CapaSOPORTE;
-//using Microsoft.AspNetCore.Http;
-//using Microsoft.AspNetCore.Mvc;
-//using System.Data.SqlClient;
+﻿using CapaSOPORTE;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 
-//namespace Vista.Controllers
-//{
-//    public class InicioSesionController : Controller
-//    {
-//        [HttpPost]
-//        public ActionResult IniciarSesion(UsuarioModel usuario)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                string connectionString = "Data Source=LAPTOP-GGTKFVHF\\SQLEXPRESS;Initial Catalog=MichiDB;Integrated Security=True";
-//                using (SqlConnection connection = new SqlConnection(connectionString))
-//                {
-//                    string query = "SELECT * FROM Usuarios WHERE email=@email AND contraseña=@contraseña";
-//                    SqlCommand command = new SqlCommand(query, connection);
-//                    command.Parameters.AddWithValue("@email", usuario.email);
-//                    command.Parameters.AddWithValue("@contraseña", usuario.contraseña);
+namespace Vista.Controllers
+{
+    public class InicioSesionController : Controller
+    {
 
-//                    connection.Open();
-//                    SqlDataReader reader = command.ExecuteReader();
+        public ActionResult Index()
+        {
+            return View();
+        }
 
-//                    if (reader.HasRows)
-//                    {
-//                        reader.Read();
-//                        HttpContext.Session.Set("Usuario", System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(new UsuarioModel(reader)));
+        //[HttpPost]
+        //public ActionResult ValidarUsuario(string email, string contraseña)
+        //{
+        //    bool usuarioValido = UsuarioModel.ValidarUsuario(email, contraseña);
 
-//                        reader.Close();
-//                        connection.Close();
+        //    if (usuarioValido)
+        //    {
+        //        HttpContext.Session.SetString("email", email);
+        //        return RedirectToAction("Index", "Home");
+        //    }
+        //    else
+        //    {
+        //        ViewBag.Mensaje = "Email y/o contraseña incorrectos.";
+        //        return View("Index");
+        //    }
+        //}
 
-//                        return RedirectToAction("Index", "Home");
-//                    }
-//                    else
-//                    {
-//                        reader.Close();
-//                        connection.Close();
+        //public ActionResult CerrarSesion()
+        //{
+        //    HttpContext.Session.Clear();
+        //    return RedirectToAction("Index", "Home");
+        //}
+    }
+}
 
-//                        ModelState.AddModelError("", "Correo electrónico o contraseña incorrecta");
-//                    }
-//                }
-//            }
-
-//            return View("Index", usuario);
-//        }
-//    }
-//}
