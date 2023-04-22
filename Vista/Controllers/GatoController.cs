@@ -11,6 +11,8 @@ namespace Vista.Controllers
         public ActionResult Index()
         {
             ObtenerGatos();
+            ViewBag.EmailUsuario = HttpContext.Session.GetString("NombreEmail");
+
             return View(listas);
         }
 
@@ -29,29 +31,10 @@ namespace Vista.Controllers
             listas.listaGatos = DOM_GATO.ObtenerGato(id);
         }
 
-        public void ObtenerUsuarios()
-        {
-            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuarios();
-        }
+        //public void ObtenerFormulario()
+        //{
+        //    listas.listaFormulario = DOM_FORMULARIO.ObtenerFormulario();
+        //}
 
-        public void ObtenerUsuario(int id)
-        {
-            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuario(id);
-        }
-
-        public void ObtenerFormulario()
-        {
-            listas.listaFormulario = DOM_FORMULARIO.ObtenerFormulario();
-        }
-
-        public ActionResult Registro()
-        {
-            return View();
-        }
-
-        public ActionResult IniciarSesion()
-        {
-            return View();
-        }
     }
 }

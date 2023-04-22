@@ -1,8 +1,8 @@
-﻿@model CapaSOPORTE.UsuarioModel
+﻿@model CapaSOPORTE.InicioSesionModel
 @{
     ViewData["Title"] = "Iniciar sesión";
 }
-    <div class="content">
+<div class="content">
     <div class="container">
 
         <div class="row">
@@ -14,8 +14,9 @@
                     <div class="col-md-8">
                         <div class="mb-4">
                             <h3>Iniciar sesión</h3>
+                            <h3>@ViewData["Test"]</h3>
                         </div>
-                        @using (Html.BeginForm("InicioSesion", "InicioSesion", FormMethod.Post))
+                        @using (Html.BeginForm("IniciarSesion", "Usuario", FormMethod.Post))
                         {
                                 <div class="form-group first">
                                     @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email", @style="margin:10px 0"})
@@ -28,7 +29,7 @@
                                 <input type="submit" value="Entrar" class="btn btn-block btn-secondary">
                         }
                         <div class="text-center w-100">
-                            <p class="text-muted font-weight-bold">¿No tienes cuenta todavía? <a href="@Url.Action("Registro", "Home")" class="text-secondary ml-2"> ¡Regístrate!</a></p>
+                            <p class="text-muted font-weight-bold">¿No tienes cuenta todavía? <a href="@Url.Action("Registro", "Usuario")" class="text-secondary ml-2"> ¡Regístrate!</a></p>
                         </div>
                     </div>
                 </div>

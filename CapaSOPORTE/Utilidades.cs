@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaSOPORTE
 {
-    public class Utilidades
+    public static class Utilidades
     {
         public static bool TinyintABool(byte numero)
         {
@@ -30,6 +30,16 @@ namespace CapaSOPORTE
             {
                 return "hembra";
             }
+        }
+
+        public static string EncriptarContra(this string contra)
+        {
+            return BCrypt.Net.BCrypt.HashPassword(contra);
+        }
+
+        public static bool ComprobarContra(string contraFormulario, string contraBBDD)
+        {
+            return BCrypt.Net.BCrypt.Verify(contraFormulario, contraBBDD);
         }
     }
 }

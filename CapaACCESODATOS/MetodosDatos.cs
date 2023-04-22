@@ -32,24 +32,6 @@ namespace CapaACCESODATOS
             return comando;
         }
 
-        public static int EjecutarComandoInsert(SqlCommand comando)
-        {
-            try
-            {
-                comando.Connection.Open();
-                return comando.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                return -1;
-            }
-            finally
-            {
-                comando.Connection.Dispose();
-                comando.Connection.Close();
-            }
-        }
-
         public static DataTable EjecutarComandoSelect(SqlCommand comando)
         {
             DataTable tabla = new DataTable();
@@ -70,25 +52,19 @@ namespace CapaACCESODATOS
             return tabla;
         }
 
-        //public static DataTable EjecutarComandoInsert(SqlCommand comando)
-        //{
-        //    DataTable tabla = new DataTable();
-        //    try
-        //    {
-        //        comando.Connection.Open();
-        //        SqlDataAdapter adaptador = new SqlDataAdapter();
-        //        adaptador.SelectCommand = comando;
-        //        adaptador.Fill(tabla);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        DataTable dt = new DataTable();
-        //        return dt;
-        //    }
-        //    finally
-        //    { comando.Connection.Close(); }
-        //    return tabla;
-        //}
+        public static int EjecutarComandoInsert(SqlCommand procedureowo)
+        {
+            try
+            {
+                procedureowo.Connection.Open();
+                return procedureowo.ExecuteNonQuery();
+            }
+            finally
+            {
+                procedureowo.Connection.Dispose();
+                procedureowo.Connection.Close();
+            }
+        }
 
         public static string CreateConnection()
         {

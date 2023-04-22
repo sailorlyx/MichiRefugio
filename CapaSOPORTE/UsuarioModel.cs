@@ -15,15 +15,18 @@ namespace CapaSOPORTE
         public string apellido { get; set; }
         public string apellido2 { get; set; }
 
-        [Required(ErrorMessage = "Email no válido")]
-        [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Correo electrónico incorrecto")]
+        //[Required(ErrorMessage = "Email no válido")]
+        //[RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Correo electrónico incorrecto")]
         public string email { get; set; }
 
-        [Required(ErrorMessage = "Contraseña no válida")]
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{8,}$", ErrorMessage = "Contraseña no válida")]
+        //[Required(ErrorMessage = "Contraseña no válida")]
+        //[RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z]).{8,}$", ErrorMessage = "Contraseña no válida")]
         public string contraseña { get; set; }
-        public int telefono { get; set; }
+        public string telefono { get; set; }
         public bool admin { get; set; }
+
+        public UsuarioModel()
+        { }
 
         public UsuarioModel(DataRow row)
         {
@@ -33,8 +36,8 @@ namespace CapaSOPORTE
             apellido2 = row.Field<string>("apellido2");
             email = row.Field<string>("email");
             contraseña = row.Field<string>("contraseña");
-            telefono = row.Field<int>("telefono");
-            admin = row.Field<bool>("admin");
+            telefono = row.Field<string>("telefono");
+            admin = Utilidades.TinyintABool( row.Field<byte>("admin"));
         }
     }
 }

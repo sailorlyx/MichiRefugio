@@ -11,9 +11,9 @@ namespace CapaDOM
 {
     public class DOM_USUARIO
     {
-        public static List<UsuarioModel> ObtenerUsuarios()
+        public static List<UsuarioModel> ConseguirUsuarioPorEmail(string email)
         {
-            DataTable dt = DAC_USUARIO.ObtenerUsuarios();
+            DataTable dt = DAC_USUARIO.ConseguirUsuarioPorEmail(email);
 
             List<UsuarioModel> lista = new List<UsuarioModel>();
 
@@ -24,19 +24,11 @@ namespace CapaDOM
 
             return lista;
         }
-
-        public static List<UsuarioModel> ObtenerUsuario(int id)
+        public static void RegistrarUsuario(string nombre, string apellido, string apellido2, string email, string contraseña, string telefono)
         {
-            DataTable dt = DAC_USUARIO.ObtenerUsuario(id);
+            contraseña = Utilidades.EncriptarContra(contraseña);
 
-            List<UsuarioModel> lista = new List<UsuarioModel>();
-
-            foreach (DataRow row in dt.Rows)
-            {
-                lista.Add(new UsuarioModel(row));
-            }
-
-            return lista;
+            DAC_USUARIO.RegistrarUsuario(nombre, apellido, apellido2, email, contraseña,telefono);
         }
     }
 }

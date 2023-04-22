@@ -7,17 +7,25 @@
                 <li><a asp-controller="Home" asp-action="Colabora" class="nav-link px-2 link-dark">Colabora</a></li>
                 <li><a asp-controller="Home" asp-action="SobreNosotros" class="nav-link px-2 link-dark">Sobre nosotros</a></li>
             </ul>
-
-            <div class="dropdown text-end">
-                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
-                </a>
-                <ul class="dropdown-menu text-small">
-                    <li><a class="dropdown-item" asp-controller="Home" asp-action="Registro">Registrarse</a></li>
-                    <li><hr class="dropdown-divider"></li>       
-                    <li><a class="dropdown-item" asp-controller="Home" asp-action="IniciarSesion">Iniciar sesión</a></li>
+            @if (ViewBag.EmailUsuario == null)
+            {
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" asp-controller="Usuario" asp-action="RegistroView">Registrarse</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" asp-controller="Usuario" asp-action="IniciarSesionView">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            }
+            else
+            {
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a asp-controller="Home" asp-action="SobreNosotros" class="nav-link px-2 link-dark">@ViewBag.EmailUsuario</a></li>
                 </ul>
-            </div>
+            }
         </div>
     </div>
 </header>
