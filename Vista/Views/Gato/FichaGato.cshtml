@@ -5,20 +5,22 @@
 <div class="content">
     <div class="container">
         <div class="row">
-                @foreach (var item in Model.listaGatos)
+            @foreach (var item in Model.listaGatos)
                 {
-                    <div class="col-md-5 mr-auto">
-                        <h3 class="mb-3">@item.nombre</h3>
+                <div class="col-md-5 mr-auto">
+                    <h3 class="mb-3">@item.nombre</h3>
                         <img class="fotoFicha" src="~/@item.foto" alt="michi salvaje debería aparecer" />
                         <p>@item.descripcion</p>
                         <p>&#9786; Cosas que le gustan: @item.Gusta</p>
                         <p>&#10008; Cosas que no le gustan: @item.Odia</p>
-                    </div>
-                }
-        
-            <div class="col-md-6">
-                <div class="box">
-                    <h3 class="heading">¿Quieres adoptarla?</h3>
+                </div>
+            }
+
+            @if (ViewBag.EmailUsuario == null)
+            {
+                <div class="col-md-6">
+                    <div class="box">
+                    <h3 class="heading">¿Quieres adoptarle?</h3>
                     <form class="mb-5" method="post" id="contactForm" name="contactForm">
                         <div class="row">
                             <div class="col-md-6 form-group">
@@ -29,29 +31,36 @@
                                 <label for="name" class="col-form-label">Apellido</label>
                                 <input type="text" class="form-control" name="organization" id="organization" placeholder="Tu apellido">
                             </div>
-                        </div>
+                            </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <label for="email" class="col-form-label">Email</label>
-                                <input type="text" class="form-control" name="email" id="email" placeholder="Tu email">
+                                 <label for="email" class="col-form-label">Email</label>
+                                 <input type="text" class="form-control" name="email" id="email" placeholder="Tu email">
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
-                                <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
+                                 <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
+                                 <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
                             </div>
                         </div>
-                        </>
                         <div class="row">
-                            <div class="col-md-12">
+                             <div class="col-md-12">
                                 <input type="submit" value="Enviar" class="btn btn-block btn-secondary rounded-0 py-2 px-4">
                                 <span class="submitting"></span>
-                            </div>
+                             </div>
                         </div>
                     </form>
+                    </div>
                 </div>
-            </div>
+            }else
+            {
+                <div class="col-md-12 form-group">
+                    <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
+                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
+                </div>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+            }                             
         </div>
     </div>
 </div>

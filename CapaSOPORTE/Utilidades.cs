@@ -32,6 +32,19 @@ namespace CapaSOPORTE
             }
         }
 
+        public static string Generoformulario(string genero)
+        {
+            if (genero == "M")
+            {
+                return "¿Quieres adoptarlo?";
+            }
+            else
+            {
+                return "¿Quieres adoptarla?";
+            }
+        }
+        //añadirrrrrrrrrrrrr
+
         public static string EncriptarContra(this string contra)
         {
             return BCrypt.Net.BCrypt.HashPassword(contra);

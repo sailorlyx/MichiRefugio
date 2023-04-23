@@ -1,6 +1,7 @@
 ﻿using CapaDOM;
 using CapaSOPORTE;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
 
 namespace Vista.Controllers
 {
@@ -87,6 +88,13 @@ namespace Vista.Controllers
         public void ConseguirUsuarioPorEmail(string email)
         {
             listas.listaUsuarios = DOM_USUARIO.ConseguirUsuarioPorEmail(email);
+        }
+
+        public void CerrarSesion()
+        {
+            HttpContext.Session.Clear();
+            HttpContext.Response.Redirect("Index");
+            //creo que no funciona??
         }
     }
 }
