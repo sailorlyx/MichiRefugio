@@ -2,12 +2,12 @@
 using CapaSOPORTE;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
+//using System.Web.Security;
 
 namespace Vista.Controllers
 {
     public class UsuarioController : BaseController
-    {
-
+    { 
         public ActionResult IniciarSesionView()
         {
             return View("IniciarSesion");
@@ -16,6 +16,11 @@ namespace Vista.Controllers
         public ActionResult RegistroView()
         {
             return View("Registro");
+        }
+
+        public ActionResult PerfilUsuarioView()
+        {
+            return View("PerfilUsuario");
         }
 
         [HttpPost]
@@ -90,11 +95,11 @@ namespace Vista.Controllers
             listas.listaUsuarios = DOM_USUARIO.ConseguirUsuarioPorEmail(email);
         }
 
-        public void CerrarSesion()
-        {
-            HttpContext.Session.Clear();
-            HttpContext.Response.Redirect("Index");
-            //creo que no funciona??
-        }
+        //public ActionResult CerrarSesion()
+        //{
+        //    FormsAuthentication.SignOut();
+        //    return RedirectToAction("Index", "Home");
+        //}
+
     }
 }

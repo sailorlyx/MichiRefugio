@@ -32,6 +32,23 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoInsert(procedureowo);
 
         }
+
+        //public static int CambiarDatos(string nombre, string apellido, string apellido2, string email, string contraseña, string telefono, byte admin = 0)
+        //{
+        //    SqlCommand update = MetodosDatos.CrearComando(CambiarDatos);
+        //    update.CommandText = "UPDATE id, nombre, apellido, apellido2, email, contraseña, telefono, admin"
+        //    + " FROM USUARIO
+        //    + " SET Valor = @NuevoValor
+        //    + " WHERE Id = @IdRegistro";
+        //
+        //    update.Parameters.AddWithValue("@nombre", nombre)
+        //    update.Parameters.AddWithValue("@apellido", apellido);
+        //    update.Parameters.AddWithValue("@apellido2", apellido2);
+        //    update.Parameters.AddWithValue("@email", email);
+        //    update.Parameters.AddWithValue("@contraseña", contraseña);
+        //    update.Parameters.AddWithValue("@telefono", telefono);
+        //    update.Parameters.AddWithValue("@admin", admin);
+        //}
     }
 
 }

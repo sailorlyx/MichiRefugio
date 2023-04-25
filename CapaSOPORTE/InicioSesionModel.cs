@@ -26,5 +26,6 @@ namespace CapaSOPORTE
             email = row.Field<string>("email");
             contraseña = row.Field<string>("contraseña");
         }
+
     }
 }
