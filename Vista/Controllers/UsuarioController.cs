@@ -95,11 +95,11 @@ namespace Vista.Controllers
             listas.listaUsuarios = DOM_USUARIO.ConseguirUsuarioPorEmail(email);
         }
 
-        //public ActionResult CerrarSesion()
-        //{
-        //    FormsAuthentication.SignOut();
-        //    return RedirectToAction("Index", "Home");
-        //}
+        public ActionResult CerrarSesion()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Gato");
+        }
 
     }
 }

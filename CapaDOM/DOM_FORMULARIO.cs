@@ -8,16 +8,16 @@ namespace CapaDOM
     {
         //public static List<FormularioModel> ObtenerFormulario()
         //{
-            //DataTable dt = DAC_FORMULARIO.ObtenerFormulario();
+        //    DataTable dt = DAC_FORMULARIO.ObtenerFormulario();
 
-            //List<FormularioModel> lista = new List<FormularioModel>();
+        //    List<FormularioModel> lista = new List<FormularioModel>();
 
-            //foreach (DataRow row in dt.Rows)
-            //{
-            //    lista.Add(new FormularioModel(row));
-            //}
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        lista.Add(new FormularioModel(row));
+        //    }
 
-            //return lista;
+        //    return lista;
         //}
     }
 }

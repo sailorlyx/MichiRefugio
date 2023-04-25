@@ -12,18 +12,17 @@ namespace Vista.Controllers
             return View();
         }
 
-        public IActionResult Colabora()
+        public ActionResult Colabora()
         {
             return View();
         }
 
-        public IActionResult SobreNosotros()
+        public ActionResult SobreNosotros()
         {
             return View();
         }
-        public IActionResult IniciarSesion()
+        public ActionResult IniciarSesion()
         {
-            ViewData["Test"] = "jiji";
             return View();
         }
     }

@@ -64,3 +64,15 @@
         </div>
     </div>
 </div>
+
+@*nena que esto iria asi
+@using (@Html.BeginForm("Formulario", "Usuario", FormMethod.Post)) {
+                             <div class="row">
+                                <div class="col-md-6 form-group">
+                                    @Html.LabelFor(formulario => formulario.nombre, new { @class = "col-form-label" })
+                                    @Html.TextBoxFor(formulario => formulario.nombre, new { @class = "form-control", placeholder = "Nombre" })
+                             </div>
+                                <div class="col-md-6 form-group">
+                                    @Html.LabelFor(formulario => formulario.apellido)
+                                    @Html.TextBoxFor(formulario => formulario.apellido, new { @class = "form-control", placeholder = "Tu apellido" })
+                             </div>*@
