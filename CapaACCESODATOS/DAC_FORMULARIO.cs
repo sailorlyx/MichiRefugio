@@ -11,7 +11,7 @@ namespace CapaACCESODATOS
         //public static DataTable InsertarDatos()
         //{
         //    SqlCommand comando = MetodosDatos.CrearComando();
-        //        comando.CommandText = "INSERT INTO tabla (nombre, apellido, apellido2, email, contra, telefono)"
+        //        comando.CommandText = "INSERT INTO FORMULARIO (nombre, apellido, apellido2, email, contra, telefono)"
         //        + " VALUES (@nombre, @apellido, @apellido2, @email, @contra, @telefono)";
         //        //comando.Parameters.AddWithValue("@nombre", comando.nombre);
         //        //comando.Parameters.AddWithValue("@apellido", comando.apellido);

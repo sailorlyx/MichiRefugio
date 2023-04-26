@@ -16,7 +16,6 @@ namespace CapaSOPORTE
         public string apellido2 { get; set; }
 
         //[Required(ErrorMessage = "Email no válido")]
-        //[RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Correo electrónico incorrecto")]
         public string email { get; set; }
 
         //[Required(ErrorMessage = "Contraseña no válida")]

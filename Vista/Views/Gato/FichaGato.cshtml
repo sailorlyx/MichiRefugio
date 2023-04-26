@@ -1,4 +1,5 @@
 ﻿@model CapaSOPORTE.Listas
+@inject IHttpContextAccessor Accessor
 @{
     ViewData["Title"] = "Michi Refugio";
 }
@@ -16,7 +17,7 @@
                 </div>
                 }
 
-            @if (ViewBag.EmailUsuario == null)
+            @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
             {
                 <div class="col-md-6">
                     <div class="box">
@@ -38,6 +39,12 @@
                                  <input type="text" class="form-control" name="email" id="email" placeholder="Tu email">
                             </div>
                         </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <label for="telefono" class="col-form-label">Teléfono</label>
+                                    <input type="text" class="form-control" name="tlf" id="tlf" placeholder="Tu telefono">
+                                </div>
+                            </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
                                  <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
@@ -65,15 +72,3 @@
         </div>
     </div>
 </div>
-
-@*nena que esto iria asi
-@using (@Html.BeginForm("Formulario", "Usuario", FormMethod.Post)) {
-                             <div class="row">
-                                <div class="col-md-6 form-group">
-                                    @Html.LabelFor(formulario => formulario.nombre, new { @class = "col-form-label" })
-                                    @Html.TextBoxFor(formulario => formulario.nombre, new { @class = "form-control", placeholder = "Nombre" })
-                             </div>
-                                <div class="col-md-6 form-group">
-                                    @Html.LabelFor(formulario => formulario.apellido)
-                                    @Html.TextBoxFor(formulario => formulario.apellido, new { @class = "form-control", placeholder = "Tu apellido" })
-                             </div>*@
