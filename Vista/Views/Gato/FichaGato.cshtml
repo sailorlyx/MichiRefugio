@@ -14,7 +14,7 @@
                         <p>&#9786; Cosas que le gustan: @item.Gusta</p>
                         <p>&#10008; Cosas que no le gustan: @item.Odia</p>
                 </div>
-            }
+                }
 
             @if (ViewBag.EmailUsuario == null)
             {
@@ -59,7 +59,8 @@
                     <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
                     <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
                 </div>
-                <button type="button" class="btn btn-secondary">Secondary</button>
+                <input type="submit" value="Enviar" class="btn btn-block btn-secondary rounded-0 py-2 px-4">
+                <span class="submitting"></span>
             }                             
         </div>
     </div>

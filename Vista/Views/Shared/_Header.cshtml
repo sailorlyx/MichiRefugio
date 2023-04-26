@@ -1,4 +1,7 @@
-﻿<header class="p-3 mb-3 border-bottom">
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+
+<header class="p-3 mb-3 border-bottom">
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ms-auto">
                 <img class="logo" src="~/img/logomichi.png" alt="loguito" width="80">
@@ -7,7 +10,7 @@
                 <li><a asp-controller="Home" asp-action="Colabora" class="nav-link px-2 link-dark">Colabora</a></li>
                 <li><a asp-controller="Home" asp-action="SobreNosotros" class="nav-link px-2 link-dark">Sobre nosotros</a></li>
             </ul>
-            @if (ViewBag.EmailUsuario == null)
+            @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
             {
                 <div class="dropdown text-end">
                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,7 +39,7 @@
                     </div>
                 </div>
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a asp-controller="Home" asp-action="SobreNosotros" class="nav-link px-2 link-dark">@ViewBag.EmailUsuario</a></li>
+                    <li><a asp-controller="Home" asp-action="SobreNosotros" class="nav-link px-2 link-dark">@Accessor.HttpContext.Session.GetString("NombreEmail")</a></li>
                 </ul>
             }
         </div>

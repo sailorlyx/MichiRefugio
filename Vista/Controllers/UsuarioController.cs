@@ -2,7 +2,6 @@
 using CapaSOPORTE;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
-//using System.Web.Security;
 
 namespace Vista.Controllers
 {

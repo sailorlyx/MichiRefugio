@@ -47,7 +47,7 @@ namespace CapaACCESODATOS
 
         //    creada la procedure, mirar si está bien y añadirlo al código :p
         //}
-        
+
     }
 
 }
