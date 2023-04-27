@@ -31,10 +31,5 @@ namespace Vista.Controllers
             listas.listaGatos = DOM_GATO.ObtenerGato(id);
         }
 
-        //public void ObtenerFormulario()
-        //{
-        //    listas.listaFormulario = DOM_FORMULARIO.ObtenerFormulario();
-        //}
-
     }
 }

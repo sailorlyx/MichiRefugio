@@ -30,5 +30,32 @@ namespace CapaDOM
 
             DAC_USUARIO.RegistrarUsuario(nombre, apellido, apellido2, email, contraseña,telefono);
         }
+        public static List<UsuarioModel> ObtenerUsuarios()
+        {
+            DataTable dt = DAC_USUARIO.ObtenerUsuarios();
+
+            List<UsuarioModel> lista = new List<UsuarioModel>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                lista.Add(new UsuarioModel(row));
+            }
+
+            return lista;
+        }
+
+        public static List<UsuarioModel> ObtenerUsuario(int id)
+        {
+            DataTable dt = DAC_USUARIO.ObtenerUsuario(id);
+
+            List<UsuarioModel> lista = new List<UsuarioModel>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                lista.Add(new UsuarioModel(row));
+            }
+
+            return lista;
+        }
     }
 }

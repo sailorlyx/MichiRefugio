@@ -22,6 +22,24 @@ namespace Vista.Controllers
             return View("PerfilUsuario");
         }
 
+        public ActionResult PanelAdministrador()
+        {
+            ObtenerUsuarios();
+            return View(listas);
+        }
+
+        public ActionResult ObtenerUsuarios()
+        {
+            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuarios();
+            return View();
+        }
+
+        public ActionResult ObtenerUsuario(int id)
+        {
+            listas.listaUsuarios = DOM_USUARIO.ObtenerUsuario(id);
+            return View();
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult IniciarSesion(InicioSesionModel usu)
@@ -100,5 +118,6 @@ namespace Vista.Controllers
             return RedirectToAction("Index", "Gato");
         }
 
+        
     }
 }

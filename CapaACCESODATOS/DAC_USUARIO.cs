@@ -32,6 +32,22 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoInsert(procedureowo);
 
         }
+        public static DataTable ObtenerUsuarios()
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono "
+                + " FROM USUARIO";
+            return MetodosDatos.EjecutarComandoSelect(comando);
+        }
+
+        public static DataTable ObtenerUsuario(int id)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono"
+                + " FROM USUARIO"
+                + " WHERE id = " + id;
+            return MetodosDatos.EjecutarComandoSelect(comando);
+        }
 
         //public static int CambiarDatos(string nombre, string apellido, string apellido2, string email, string contraseña, string telefono, byte admin = 0)
         //{
@@ -47,6 +63,8 @@ namespace CapaACCESODATOS
 
         //    creada la procedure, mirar si está bien y añadirlo al código :p
         //}
+
+
 
     }
 

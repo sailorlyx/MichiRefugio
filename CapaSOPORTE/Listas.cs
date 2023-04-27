@@ -10,6 +10,6 @@ namespace CapaSOPORTE
     {
         public List<GatoModel> listaGatos { get; set; }
         public List<UsuarioModel> listaUsuarios { get; set; }
-        public List<FormularioModel> listaFormulario { get; set; }
+        public List<FormularioModel> listaFormularios { get; set; }
     }
 }
