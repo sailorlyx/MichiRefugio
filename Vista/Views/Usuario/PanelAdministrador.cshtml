@@ -21,6 +21,7 @@
                         <th>Segundo apellido</th>
                         <th>Email</th>
                         <th>Teléfono</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,45 +33,16 @@
                             <td>@usuario.apellido</td>
                             <td>@usuario.apellido2</td>
                             <td>@usuario.email</td>
-                            <td>@usuario.contraseña</td>
                             <td>@usuario.telefono</td>
-                            <td>@usuario.admin</td>
+                            <td>
+                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-8"><h2>Gatos</h2></div>
-                    <div class="col-sm-4">
-                        <table class="table table-striped table-hover table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Nombre</th>
-                                    <th>Edad</th>
-                                    <th>Género</th>
-                                    <th>Adoptado</th>
-                                    <th>Foto</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var gato in Model.listaGatos)
-                                {
-                                    <tr>
-                                        <td>@gato.id</td>
-                                        <td>@gato.nombre</td>
-                                        <td>@gato.edad</td>
-                                        <td>@gato.genero</td>
-                                        <td>@gato.adoptado</td>
-                                        <td>@gato.foto</td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>

@@ -25,6 +25,7 @@ namespace Vista.Controllers
         public ActionResult PanelAdministrador()
         {
             ObtenerUsuarios();
+            
             return View(listas);
         }
 

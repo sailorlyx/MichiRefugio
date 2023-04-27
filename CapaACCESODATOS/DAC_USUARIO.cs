@@ -35,7 +35,7 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerUsuarios()
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono "
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono, contraseña, admin"
                 + " FROM USUARIO";
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
@@ -43,7 +43,7 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerUsuario(int id)
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono"
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono, contraseña, admin"
                 + " FROM USUARIO"
                 + " WHERE id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
