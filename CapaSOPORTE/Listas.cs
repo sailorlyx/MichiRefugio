@@ -11,5 +11,11 @@ namespace CapaSOPORTE
         public List<GatoModel> listaGatos { get; set; }
         public List<UsuarioModel> listaUsuarios { get; set; }
         public List<FormularioModel> listaFormularios { get; set; }
+        public FormularioModel formularioUsu { get; set; }
+
+        public Listas()
+        {
+            formularioUsu = new FormularioModel();
+        }
     }
 }

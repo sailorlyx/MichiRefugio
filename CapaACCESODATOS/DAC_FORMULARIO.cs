@@ -11,27 +11,22 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerFormularios()
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, contra, telefono"
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono"
                 + " FROM FORMULARIO";
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
 
-        
-       
-        //public static DataTable InsertarDatos()
-        //{
-        //    SqlCommand comando = MetodosDatos.CrearComando();
-        //    comando.CommandText = "INSERT INTO FORMULARIO (nombre, apellido, apellido2, email, contra, telefono)"
-        //    + " VALUES (@nombre, @apellido, @apellido2, @email, @contra, @telefono)";
-        //    //comando.Parameters.AddWithValue("@nombre", comando.nombre);
-        //    //comando.Parameters.AddWithValue("@apellido", comando.apellido);
-        //    //comando.Parameters.AddWithValue("@apellido2", comando.apellido2);
-        //    //comando.Parameters.AddWithValue("@email", comando.email);
-        //    //comando.Parameters.AddWithValue("@telefono", comando.telefono);
-        //    //comando.Parameters.AddWithValue("@contra", comando.contra);
-        //    //comando.ExecuteNonQuery();
-        //    //sospecho que esto no va aquí
-
-        //}
+        public static int GuardarFormulario(string nombre, string apellido, string apellido2, string email, string telefono)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "INSERT INTO FORMULARIO (nombre, apellido, apellido2, email, telefono)"
+            + " VALUES (@nombre, @apellido, @apellido2, @email, @telefono)";
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@apellido", apellido);
+            comando.Parameters.AddWithValue("@apellido2", apellido2);
+            comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@telefono", telefono);
+            return MetodosDatos.EjecutarComandoInsert(comando);
+        }
     }
 }

@@ -19,5 +19,12 @@ namespace CapaDOM
 
             return lista;
         }
+
+        public static void GuardarFormulario(FormularioModel formulario)
+        {
+            DAC_FORMULARIO.GuardarFormulario(formulario.nombre, formulario.apellido, formulario.apellido2, formulario.email, formulario.telefono);
+        }
+
+
     }
 }

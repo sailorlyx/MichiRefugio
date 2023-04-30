@@ -16,59 +16,51 @@
                         <p>&#10008; Cosas que no le gustan: @item.Odia</p>
                 </div>
                 }
-
-            @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
-            {
                 <div class="col-md-6">
                     <div class="box">
                     <h3 class="heading">¿Quieres adoptarle?</h3>
-                    <form class="mb-5" method="post" id="contactForm" name="contactForm">
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="name" class="col-form-label">Nombre</label>
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Tu nombre">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="name" class="col-form-label">Apellido</label>
-                                <input type="text" class="form-control" name="organization" id="organization" placeholder="Tu apellido">
-                            </div>
-                            </div>
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                 <label for="email" class="col-form-label">Email</label>
-                                 <input type="text" class="form-control" name="email" id="email" placeholder="Tu email">
-                            </div>
-                        </div>
+                    @using (Html.BeginForm("GuardarFormulario", "Gato", FormMethod.Post))
+                    {
+                    @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
+                    {
                             <div class="row">
-                                <div class="col-md-12 form-group">
-                                    <label for="telefono" class="col-form-label">Teléfono</label>
-                                    <input type="text" class="form-control" name="tlf" id="tlf" placeholder="Tu telefono">
+                                <div class="col-md-6 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Tu nombre"})
+                                    @Html.ValidationMessageFor(formulario => formulario.formularioUsu.nombre)
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.apellido, new {@class = "form-control", @id="floatingInput", @placeholder="Tu primer apellido"})
+                                    @Html.ValidationMessageFor(formulario => formulario.formularioUsu.apellido)
                                 </div>
                             </div>
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                 <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
-                                 <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.apellido2, new {@class = "form-control", @id="floatingInput", @placeholder="Tu segundo apellido"})
+                                    @Html.ValidationMessageFor(formulario => formulario.formularioUsu.apellido2)
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.email, new {@class = "form-control", @id="floatingInput", @placeholder="Tu email"})
+                                    @Html.ValidationMessageFor(formulario => formulario.formularioUsu.email)
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.telefono, new {@class = "form-control", @id="floatingInput", @placeholder="Tu teléfono"})
+                                    @Html.ValidationMessageFor(formulario => formulario.formularioUsu.telefono)
+                                </div>
+                            </div>
+                    }
+                        <div class="col-md-12 form-group">
+                            <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
+                            <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
                         </div>
-                        <div class="row">
-                             <div class="col-md-12">
-                                <input type="submit" value="Enviar" class="btn btn-block btn-secondary rounded-0 py-2 px-4">
-                                <span class="submitting"></span>
-                             </div>
-                        </div>
-                    </form>
+                        <input type="submit" value="Enviar" class="btn btn-block btn-secondary rounded-0 py-2 px-4">
+                        <span class="submitting"></span>
+                    }
                     </div>
-                </div>
-            }else
-            {
-                <div class="col-md-12 form-group">
-                    <label for="message" class="col-form-label">¡Cuéntanos un poco sobre ti!</label>
-                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="¡Te responderemos lo antes posible! Meowchas gracias ♡"></textarea>
-                </div>
-                <input type="submit" value="Enviar" class="btn btn-block btn-secondary rounded-0 py-2 px-4">
-                <span class="submitting"></span>
-            }                             
+                </div>                 
         </div>
     </div>
 </div>

@@ -14,8 +14,10 @@ namespace CapaSOPORTE
         public string apellido { get; set; }
         public string apellido2 { get; set; }
         public string email { get; set; }
-        public string contra { get; set; }
-        public int telefono { get; set; }
+        public string telefono { get; set; }
+
+        public FormularioModel()
+        { }
 
         public FormularioModel(DataRow row)
         {
@@ -24,8 +26,7 @@ namespace CapaSOPORTE
             apellido = row.Field<string>("apellido");
             apellido2 = row.Field<string>("apellido2");
             email = row.Field<string>("email");
-            contra = row.Field<string>("contra");
-            telefono = row.Field<int>("telefono");
+            telefono = row.Field<string>("telefono");
         }
     }
 }
