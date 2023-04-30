@@ -1,0 +1,140 @@
+﻿@model CapaSOPORTE.Listas;
+@{
+    ViewData["Title"] = "Panel de administrador";
+}
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Usuarios</h2></div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Primer apellido</th>
+                        <th>Segundo apellido</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var usuario in Model.listaUsuarios)
+                    {
+                        <tr>
+                            <td>@usuario.id</td>
+                            <td>@usuario.nombre</td>
+                            <td>@usuario.apellido</td>
+                            <td>@usuario.apellido2</td>
+                            <td>@usuario.email</td>
+                            <td>@usuario.telefono</td>
+                            <td>
+                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Gatos</h2></div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Adoptado</th>
+                        <th>Le gusta</th>
+                        <th>No le gusta</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var michi in Model.listaGatos)
+                    {
+                        <tr>
+                            <td>@michi.id</td>
+                            <td>@michi.nombre</td>
+                            <td>@michi.edad</td>
+                            <td>@michi.genero</td>
+                            <td>@michi.adoptado</td>
+                            <td>@michi.Gusta</td>
+                            <td>@michi.Odia</td>
+                            <td>
+                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Formularios</h2></div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Primer apellido</th>
+                        <th>Segundo apellido</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                        <th>Cuéntanos sobre ti</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var formu in Model.listaFormularios)
+                    {
+                        <tr>
+                            <td>@formu.id</td>
+                            <td>@formu.nombre</td>
+                            <td>@formu.apellido</td>
+                            <td>@formu.apellido2</td>
+                            <td>@formu.email</td>
+                            <td>@formu.telefono</td>
+                            <td>Sobre ti</td>
+                            <td>
+                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

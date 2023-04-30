@@ -2,11 +2,12 @@
 using CapaSOPORTE;
 using Microsoft.AspNetCore.Mvc;
 using System.Web;
+using Vista.Controllers;
 
 namespace Vista.Controllers
 {
     public class UsuarioController : BaseController
-    { 
+    {
         public ActionResult IniciarSesionView()
         {
             return View("IniciarSesion");
@@ -20,13 +21,6 @@ namespace Vista.Controllers
         public ActionResult PerfilUsuarioView()
         {
             return View("PerfilUsuario");
-        }
-
-        public ActionResult PanelAdministrador()
-        {
-            ObtenerUsuarios();
-            
-            return View(listas);
         }
 
         public ActionResult ObtenerUsuarios()
@@ -49,7 +43,10 @@ namespace Vista.Controllers
             {
                 if (ValidarUsuario(usu.email, usu.contraseña))
                 {
+                    ComprobarAdminPorEmail();
+                    var admin = ComprobarAdminPorEmail();
                     HttpContext.Session.SetString("NombreEmail", usu.email);
+                    HttpContext.Session.SetString("admin", admin.ToString());
                     return RedirectToAction("Index", "Gato");
                 }
                 else
@@ -119,6 +116,15 @@ namespace Vista.Controllers
             return RedirectToAction("Index", "Gato");
         }
 
+        private bool ComprobarAdminPorEmail()
+        {
+            if (listas.listaUsuarios[0].admin) { 
+                return true; 
+            } else
+            {
+                return false;
+            }
+        }
         
     }
 }

@@ -34,10 +34,15 @@
                         <ul class="dropdown-menu text-small">
                             <li><a class="dropdown-item" asp-controller="Usuario" asp-action="PerfilUsuarioView">&#9881 Perfil</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" asp-controller="Usuario" asp-action="PanelAdministrador">&#9776; Panel de admin</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" asp-controller="Usuario" asp-action="CerrarSesion">&#10149; Cerrar sesión</a></li>
-                           
+                            @if (@Accessor.HttpContext.Session.GetString("admin") == "True")
+                            {
+                                <li><a class="dropdown-item" asp-controller="Admin" asp-action="PanelAdmin">&#9776; Panel de admin</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" asp-controller="Usuario" asp-action="CerrarSesion">&#10149; Cerrar sesión</a></li>
+                            } else
+                            {
+                                <li><a class="dropdown-item" asp-controller="Usuario" asp-action="CerrarSesion">&#10149; Cerrar sesión</a></li>
+                            }
 
                         </ul>
                     </div>

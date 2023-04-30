@@ -49,22 +49,29 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
 
-        //public static int CambiarDatos(string nombre, string apellido, string apellido2, string email, string contraseña, string telefono, byte admin = 0)
-        //{
-        //    SqlCommand update = MetodosDatos.CrearComandoProc("CambiarDatos");
-        //    update.Parameters.AddWithValue("@nombre", nombre);
-        //    update.Parameters.AddWithValue("@apellido", apellido);
-        //    update.Parameters.AddWithValue("@apellido2", apellido2);
-        //    update.Parameters.AddWithValue("@email", email);
-        //    update.Parameters.AddWithValue("@contraseña", contraseña);
-        //    update.Parameters.AddWithValue("@telefono", telefono);
-        //    update.Parameters.AddWithValue("@admin", admin);
-        //    return MetodosDatos.EjecutarComandoInsert(update);
+        public static int ModificarUsuario(string nombre, string apellido, string apellido2, string email, string telefono)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "UPDATE USUARIO SET nombre = @nombre, apellido = @apellido, apellido2 = @apellido2, email = @email, telefono = @telefono"
+               + " WHERE id = @id";
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@apellido", apellido);
+            comando.Parameters.AddWithValue("@apellido2", apellido2);
+            comando.Parameters.AddWithValue("@email", email);   
+            comando.Parameters.AddWithValue("@telefono", telefono);
 
-        //    creada la procedure, mirar si está bien y añadirlo al código :p
-        //}
+            return MetodosDatos.EjecutarComandoInsert(comando);
+            
+        }
 
+        public static int EliminarUsuario(int id)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "DELETE FROM USUARIO WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
 
+            return MetodosDatos.EjecutarComandoInsert(comando);
+        }
 
     }
 
