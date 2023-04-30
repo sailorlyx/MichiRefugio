@@ -21,8 +21,10 @@
                     <h3 class="heading">¿Quieres adoptarle?</h3>
                     @using (Html.BeginForm("GuardarFormulario", "Gato", FormMethod.Post))
                     {
+                        @Html.HiddenFor(formulario => formulario.formularioUsu.idGato, Model.listaGatos[0].id);
                     @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
                     {
+                            
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     @Html.TextBoxFor(formulario => formulario.formularioUsu.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Tu nombre"})

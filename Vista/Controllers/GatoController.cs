@@ -46,7 +46,7 @@ namespace Vista.Controllers
                 lista.formularioUsu.telefono = usuActual.telefono;
             }
 
-            DOM_FORMULARIO.GuardarFormulario(listas.formularioUsu);
+            DOM_FORMULARIO.GuardarFormulario(lista.formularioUsu);
             return RedirectToAction("Index", "Gato");
         }
 

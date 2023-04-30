@@ -16,6 +16,8 @@ namespace CapaSOPORTE
         public string email { get; set; }
         public string telefono { get; set; }
 
+        public int idGato { get; set; }
+
         public FormularioModel()
         { }
 
@@ -27,6 +29,7 @@ namespace CapaSOPORTE
             apellido2 = row.Field<string>("apellido2");
             email = row.Field<string>("email");
             telefono = row.Field<string>("telefono");
+            idGato = row.Field<int>("idGato");
         }
     }
 }
