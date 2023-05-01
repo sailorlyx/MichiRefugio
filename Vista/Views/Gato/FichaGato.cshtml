@@ -2,12 +2,14 @@
 @inject IHttpContextAccessor Accessor
 @{
     ViewData["Title"] = "Michi Refugio";
+    var idGato = 0;
 }
 <div class="content">
     <div class="container">
         <div class="row">
             @foreach (var item in Model.listaGatos)
                 {
+                idGato = item.id;
                 <div class="col-md-5 mr-auto">
                     <h3 class="mb-3">@item.nombre</h3>
                         <img class="fotoFicha" src="~/@item.foto" alt="michi salvaje debería aparecer" />
@@ -21,12 +23,13 @@
                     <h3 class="heading">¿Quieres adoptarle?</h3>
                     @using (Html.BeginForm("GuardarFormulario", "Gato", FormMethod.Post))
                     {
-                        @Html.HiddenFor(formulario => formulario.formularioUsu.idGato, Model.listaGatos[0].id);
+@*                        @Html.HiddenFor(formulario => formulario.formularioUsu.idGato, new { Value = Model.listaGatos[0].id.ToString()});*@
                     @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
                     {
                             
                             <div class="row">
                                 <div class="col-md-6 form-group">
+                                    @Html.TextBoxFor(formulario => formulario.formularioUsu.idGato, new { @Value = idGato})
                                     @Html.TextBoxFor(formulario => formulario.formularioUsu.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Tu nombre"})
                                     @Html.ValidationMessageFor(formulario => formulario.formularioUsu.nombre)
                                 </div>
