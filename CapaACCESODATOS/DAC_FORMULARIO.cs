@@ -11,7 +11,7 @@ namespace CapaACCESODATOS
         public static DataTable ObtenerFormularios()
         {
             SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono"
+            comando.CommandText = "SELECT id, nombre, apellido, apellido2, email, telefono, idGato"
                 + " FROM FORMULARIO";
             return MetodosDatos.EjecutarComandoSelect(comando);
         }

@@ -30,6 +30,7 @@ namespace CapaSOPORTE
             email = row.Field<string>("email");
             telefono = row.Field<string>("telefono");
             idGato = row.Field<int>("idGato");
+
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Vista.Controllers
         }
 
         [HttpPost]
-        public ActionResult GuardarFormulario(Listas lista, params object[] items)
+        public ActionResult GuardarFormulario(Listas lista)
         {
             string emailLogueado = HttpContext.Session.GetString("NombreEmail");
             
