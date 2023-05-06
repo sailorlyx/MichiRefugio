@@ -35,9 +35,8 @@
                             <td>@usuario.email</td>
                             <td>@usuario.telefono</td>
                             <td>
-                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip" @*asp-controller="Admin" asp-action="ModificarUsuario"*@>&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarUsuario"*@>&#9587;</a>
                             </td>
                         </tr>
                     }
@@ -81,9 +80,8 @@
                             <td>@michi.Gusta</td>
                             <td>@michi.Odia</td>
                             <td>
-                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip" @*asp-controller="Admin" asp-action="ModificarGato"*@>&#9998;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarGato"*@>&#9587;</a>
                             </td>
                         </tr>
                     }
@@ -128,9 +126,7 @@
                             <td>Sobre ti</td>
                         
                         <td>
-                                <a href="#" class="view" title="View" data-toggle="tooltip">&#128065;</a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip">&#9998;</a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip">&#9587;</a>
+                                <a href="#" class="delete" title="Delete" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarUsuario"*@>&#9587;</a>
                         </td>
                         </tr>
                     }

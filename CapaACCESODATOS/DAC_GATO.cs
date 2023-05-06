@@ -26,5 +26,31 @@ namespace CapaACCESODATOS
                 + " WHERE id = " + id;
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
+
+        public static int ModificarGato(string nombre, int edad, string genero, byte adoptado, string foto, string Gusta, string Odia)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "UPDATE GATO SET nombre = @nombre, edad = @edad, genero = @genero, adoptado = @adoptado, foto = @foto, Gusta = @Gusta, Odia = @Odia "
+               + " WHERE id = @id";
+            comando.Parameters.AddWithValue("@nombre", nombre);
+            comando.Parameters.AddWithValue("@edad", edad);
+            comando.Parameters.AddWithValue("@genero", genero);
+            comando.Parameters.AddWithValue("@adoptado", adoptado);
+            comando.Parameters.AddWithValue("@foto", foto);
+            comando.Parameters.AddWithValue("@Gusta", Gusta);
+            comando.Parameters.AddWithValue("@Odia", Odia);
+
+            return MetodosDatos.EjecutarComandoInsert(comando);
+
+        }
+
+        public static int EliminarGato(int id)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "DELETE FROM GATO WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
+
+            return MetodosDatos.EjecutarComandoInsert(comando);
+        }
     }
 }

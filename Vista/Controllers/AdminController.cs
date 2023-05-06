@@ -31,6 +31,33 @@ namespace Vista.Controllers
             listas.listaFormularios = DOM_FORMULARIO.ObtenerFormularios();
         }
 
+        #region CRUD
 
+        //public void ModificarGato()
+        //{
+        //    listas.listaGatos = DOM_GATO.ModificarGato();
+        //}
+
+        //public void EliminarGato()
+        //{
+        //    listas.listaGatos = DOM_GATO.EliminarGato();
+        //}
+
+        //public void ModificarUsuario()
+        //{
+        //    listas.listaGatos = DOM_USUARIO.ModificarUsuario();
+        //}
+
+        //public void EliminarUsuario()
+        //{
+        //    listas.listaGatos = DOM_USUARIO.EliminarUsuario();
+        //}
+
+        //public void EliminarFormulario()
+        //{
+        //    listas.listaGatos = DOM_FORMULARIO.EliminarFormulario();
+        //}
+
+        #endregion
     }
 }

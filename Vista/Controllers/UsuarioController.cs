@@ -125,6 +125,5 @@ namespace Vista.Controllers
                 return false;
             }
         }
-        
     }
 }

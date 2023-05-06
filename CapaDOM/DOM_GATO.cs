@@ -39,5 +39,33 @@ namespace CapaDOM
 
             return lista;
         }
+
+        //public static List<GatoModel> ModificarGato()
+        //{
+        //    DataTable dt = DAC_GATO.ModificarGato();
+
+        //    List<GatoModel> lista = new List<GatoModel>();
+
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        lista.Add(new GatoModel(row));
+        //    }
+
+        //    return lista;
+        //}
+
+        //public static List<GatoModel> EliminarGato()
+        //{
+        //    DataTable dt = DAC_GATO.EliminarGato();
+
+        //    List<GatoModel> lista = new List<GatoModel>();
+
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        lista.Add(new GatoModel(row));
+        //    }
+
+        //    return lista;
+        //}
     }
 }

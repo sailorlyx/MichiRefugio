@@ -29,5 +29,15 @@ namespace CapaACCESODATOS
             comando.Parameters.AddWithValue("@idGato", idGato);
             return MetodosDatos.EjecutarComandoInsert(comando);
         }
+
+        //public static int EliminarFormulario(int id)
+        //{
+        //    SqlCommand comando = MetodosDatos.CrearComando();
+        //    comando.CommandText = "DELETE FROM FORMULARIO WHERE id = @id";
+        //    comando.Parameters.AddWithValue("@id", id);
+
+        //    return MetodosDatos.EjecutarComandoInsert(comando);
+        //}
     }
+
 }

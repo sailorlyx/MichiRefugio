@@ -57,5 +57,33 @@ namespace CapaDOM
 
             return lista;
         }
+
+        //public static List<UsuarioModel> ModificarUsuario()
+        //{
+        //    DataTable dt = DAC_USUARIO.ModificarUsuario();
+
+        //    List<UsuarioModel> lista = new List<UsuarioModel>();
+
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        lista.Add(new UsuarioModel(row));
+        //    }
+
+        //    return lista;
+        //}
+
+        //public static List<UsuarioModel> EliminarUsuario()
+        //{
+        //    DataTable dt = DAC_USUARIO.EliminarUsuario();
+
+        //    List<UsuarioModel> lista = new List<UsuarioModel>();
+
+        //    foreach (DataRow row in dt.Rows)
+        //    {
+        //        lista.Add(new UsuarioModel(row));
+        //    }
+
+        //    return lista;
+        //}
     }
 }
