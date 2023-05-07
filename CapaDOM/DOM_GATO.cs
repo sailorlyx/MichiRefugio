@@ -40,19 +40,11 @@ namespace CapaDOM
             return lista;
         }
 
-        //public static List<GatoModel> ModificarGato()
-        //{
-        //    DataTable dt = DAC_GATO.ModificarGato();
-
-        //    List<GatoModel> lista = new List<GatoModel>();
-
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        lista.Add(new GatoModel(row));
-        //    }
-
-        //    return lista;
-        //}
+        public static GatoModel ModificarGato(GatoModel miau)
+        {
+            DAC_GATO.ModificarGato(miau.id, miau.nombre, miau.edad, miau.genero, miau.adoptado, miau.foto, miau.Gusta, miau.Odia);
+            return miau;
+        }
 
         //public static List<GatoModel> EliminarGato()
         //{
@@ -62,7 +54,7 @@ namespace CapaDOM
 
         //    foreach (DataRow row in dt.Rows)
         //    {
-        //        lista.Add(new GatoModel(row));
+        //        lista.Remove(new GatoModel(row));
         //    }
 
         //    return lista;

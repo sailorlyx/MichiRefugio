@@ -1,0 +1,57 @@
+﻿@model CapaSOPORTE.GatoModel;
+@{
+    ViewData["Title"] = "Modificar gato";
+}
+    <div class="col-xl-8">
+        <div class="card mb-4">
+            <div class="card-header">Modificar gato</div>
+            <div class="card-body">
+                @using (Html.BeginForm("Modificar", "Admin", FormMethod.Post))
+                {
+                    <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(gatito => gatito.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
+                        @Html.ValidationMessageFor(gatito => gatito.nombre)
+                    </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.edad, new {@class = "form-control", @id="floatingInput", @placeholder="Edad"})
+                            @Html.ValidationMessageFor(gatito => gatito.edad)
+                        </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.genero, new {@class = "form-control", @id="floatingInput", @placeholder="Género"})
+                            @Html.ValidationMessageFor(gatito => gatito.genero)
+                        </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.adoptado, new {@class = "form-control", @id="floatingInput", @placeholder="Adoptado"})
+                            @Html.ValidationMessageFor(gatito => gatito.adoptado)
+                        </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.foto, new {@class = "form-control", @id="floatingInput", @placeholder="Foto"})
+                            @Html.ValidationMessageFor(gatito => gatito.foto)
+                        </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.Gusta, new {@class = "form-control", @id="floatingInput", @placeholder="Gusta"})
+                            @Html.ValidationMessageFor(gatito => gatito.Gusta)
+                        </div>
+                    </div>
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
+                            @Html.TextBoxFor(gatito => gatito.Odia, new {@class = "form-control", @id="floatingInput", @placeholder="Odias"})
+                            @Html.ValidationMessageFor(gatito => gatito.Odia)
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" type="button">Guardar</button>
+                }
+            </div>
+        </div>
+    </div>

@@ -15,6 +15,15 @@ namespace Vista.Controllers
             return View(listas);
         }
 
+        public ActionResult ModificarGato()
+        {
+            return View();
+        }
+        public ActionResult ModificarUsuario()
+        {
+            return View();
+        }
+
         public void ObtenerGatos()
         {
             listas.listaGatos = DOM_GATO.ObtenerGatos();

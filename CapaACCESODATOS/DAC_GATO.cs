@@ -27,11 +27,12 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
 
-        public static int ModificarGato(string nombre, int edad, string genero, byte adoptado, string foto, string Gusta, string Odia)
+        public static int ModificarGato(int id, string nombre, int edad, string genero, bool adoptado, string foto, string Gusta, string Odia)
         {
             SqlCommand comando = MetodosDatos.CrearComando();
             comando.CommandText = "UPDATE GATO SET nombre = @nombre, edad = @edad, genero = @genero, adoptado = @adoptado, foto = @foto, Gusta = @Gusta, Odia = @Odia "
                + " WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@edad", edad);
             comando.Parameters.AddWithValue("@genero", genero);

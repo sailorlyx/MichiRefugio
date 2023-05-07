@@ -49,29 +49,29 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoSelect(comando);
         }
 
-        public static int ModificarUsuario(string nombre, string apellido, string apellido2, string email, string telefono)
-        {
-            SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "UPDATE USUARIO SET nombre = @nombre, apellido = @apellido, apellido2 = @apellido2, email = @email, telefono = @telefono"
-               + " WHERE id = @id";
-            comando.Parameters.AddWithValue("@nombre", nombre);
-            comando.Parameters.AddWithValue("@apellido", apellido);
-            comando.Parameters.AddWithValue("@apellido2", apellido2);
-            comando.Parameters.AddWithValue("@email", email);   
-            comando.Parameters.AddWithValue("@telefono", telefono);
+        //public static int ModificarUsuario(string nombre, string apellido, string apellido2, string email, string telefono)
+        //{
+        //    SqlCommand comando = MetodosDatos.CrearComando();
+        //    comando.CommandText = "UPDATE USUARIO SET nombre = @nombre, apellido = @apellido, apellido2 = @apellido2, email = @email, telefono = @telefono"
+        //       + " WHERE id = @id";
+        //    comando.Parameters.AddWithValue("@nombre", nombre);
+        //    comando.Parameters.AddWithValue("@apellido", apellido);
+        //    comando.Parameters.AddWithValue("@apellido2", apellido2);
+        //    comando.Parameters.AddWithValue("@email", email);   
+        //    comando.Parameters.AddWithValue("@telefono", telefono);
 
-            return MetodosDatos.EjecutarComandoInsert(comando);
+        //    return MetodosDatos.EjecutarComandoInsert(comando);
             
-        }
+        //}
 
-        public static int EliminarUsuario(int id)
-        {
-            SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "DELETE FROM USUARIO WHERE id = @id";
-            comando.Parameters.AddWithValue("@id", id);
+        //public static int EliminarUsuario(int id)
+        //{
+        //    SqlCommand comando = MetodosDatos.CrearComando();
+        //    comando.CommandText = "DELETE FROM USUARIO WHERE id = @id";
+        //    comando.Parameters.AddWithValue("@id", id);
 
-            return MetodosDatos.EjecutarComandoInsert(comando);
-        }
+        //    return MetodosDatos.EjecutarComandoInsert(comando);
+        //}
 
     }
 

@@ -1,0 +1,48 @@
+﻿@model CapaSOPORTE.UsuarioModel;
+@{
+    ViewData["Title"] = "Modificar usuario";
+}
+<div class="col-xl-8">
+    <div class="card mb-4">
+        <div class="card-header">Modificar usuario</div>
+        <div class="card-body">
+            @using (Html.BeginForm("ModificarUsuario", "Admin", FormMethod.Post))
+            {
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(usuario => usuario.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
+                        @Html.ValidationMessageFor(usuario => usuario.nombre)
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(usuario => usuario.apellido, new {@class = "form-control", @id="floatingInput", @placeholder="Primer apellido"})
+                        @Html.ValidationMessageFor(usuario => usuario.apellido)
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(usuario => usuario.apellido2, new {@class = "form-control", @id="floatingInput", @placeholder="Segundo apellido"})
+                        @Html.ValidationMessageFor(usuario => usuario.apellido2)
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(usuario => usuario.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email"})
+                        @Html.ValidationMessageFor(usuario => usuario.email)
+                    </div>
+                </div>
+                <div class="row gx-3 mb-3">
+                    <div class="col-md-6">
+                        @Html.TextBoxFor(usuario => usuario.telefono, new {@class = "form-control", @id="floatingInput", @placeholder="Teléfono"})
+                        @Html.ValidationMessageFor(usuario => usuario.telefono)
+                    </div>
+                </div>
+                <button class="btn btn-secondary" type="button">Guardar</button>
+            }
+        </div>
+    </div>
+    <div class="mb-4">
+    </div>
+</div>
+

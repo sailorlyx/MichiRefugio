@@ -4,7 +4,6 @@
 }
 <div class="row">
     <div class="col-xl-4">
-        <!-- Profile picture card-->
         <div class="card mb-4 mb-xl-0">
             <div class="card-header">Foto de perfil</div>
             <div class="card-body text-center">
@@ -24,9 +23,11 @@
         <div class="card-body">
                 @using (Html.BeginForm("PerfilUsuario", "Usuario", FormMethod.Post))
                 {
-                    <div class="mb-3">
+                    <div class="row gx-3 mb-3">
+                        <div class="col-md-6">
                         @Html.TextBoxFor(modelo => modelo.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
                          @Html.ValidationMessageFor(modelo => modelo.nombre)
+                    </div>
                     </div>
                     <div class="row gx-3 mb-3">
                         <div class="col-md-6">
