@@ -13,7 +13,7 @@
             @if (@Accessor.HttpContext.Session.GetString("NombreEmail") == null)
             {
                 <div class="dropdown text-end">
-                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="Index" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
@@ -27,10 +27,9 @@
             {
                 <div class="d-flex aling-items-end ms-auto">
                     <div class="dropdown text-end">
-                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="Index" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
                         </a>
-                        @*añadir foto de perfil a bbdd*@
                         <ul class="dropdown-menu text-small">
                             <li><a class="dropdown-item" asp-controller="Usuario" asp-action="PerfilUsuarioView">&#9881 Perfil</a></li>
                             <li><hr class="dropdown-divider"></li>

@@ -35,8 +35,8 @@
                             <td>@usuario.email</td>
                             <td>@usuario.telefono</td>
                             <td>
-                                <a href="ModificarUsuario" class="edit" title="Edit" data-toggle="tooltip" @*asp-controller="Admin" asp-action="ModificarUsuario"*@>&#9998;</a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarUsuario"*@>&#9587;</a>
+                                <button onclick="location.href='ModificarUsuario'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
+                                <button id="abrirEliminarUsuario" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -80,8 +80,8 @@
                             <td>@michi.Gusta</td>
                             <td>@michi.Odia</td>
                             <td>
-                                <a href="ModificarGato" class="edit" title="Modificar" data-toggle="tooltip" @*asp-controller="Admin" asp-action="ModificarGato"*@>&#9998;</a>
-                                <a href="#" class="delete" title="Eliminar" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarGato"*@>&#9587;</a>
+                                <button onclick="location.href='ModificarGato'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
+                                <button id="abrirEliminarGato" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -126,12 +126,42 @@
                             <td>Sobre ti</td>
                         
                         <td>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip" @*asp-controller="Admin" asp-action="EliminarUsuario"*@>&#9587;</a>
+                            <button id="abrirEliminaFormulario" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
                         </td>
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
+    </div>
+</div>
+
+<div id="modalEliminarGato" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrarModal">&times;</span>
+        <h2>Confirmar eliminación</h2>
+        <p>¿Estás seguro/a de que quieres eliminar a este gato?</p>
+         <button class="yes">Sí</button>
+        <button class="no">No</button>
+    </div>
+</div>
+
+<div id="modalEliminarUsuario" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrarModal">&times;</span>
+        <h2>Confirmar eliminación</h2>
+        <p>¿Estás seguro/a de que quieres eliminar a este usuario?</p>
+        <button class="yes">Sí</button>
+        <button class="no">No</button>
+    </div>
+</div>
+
+<div id="modalEliminarFormulario" class="modal">
+    <div class="contenido-modal">
+        <span class="cerrarModal">&times;</span>
+        <h2>Confirmar eliminación</h2>
+        <p>¿Estás seguro/a de que quieres eliminar este formulario?</p>
+        <button class="yes">Sí</button>
+        <button class="no">No</button>
     </div>
 </div>
