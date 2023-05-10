@@ -58,19 +58,10 @@ namespace CapaDOM
             return lista;
         }
 
-        //public static List<UsuarioModel> ModificarUsuario()
-        //{
-        //    DataTable dt = DAC_USUARIO.ModificarUsuario();
-
-        //    List<UsuarioModel> lista = new List<UsuarioModel>();
-
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        lista.Add(new UsuarioModel(row));
-        //    }
-
-        //    return lista;
-        //}
+        public static void ModificarUsuario(int id, string nombre, string apellido, string apellido2, string email, string telefono) {
+            DAC_USUARIO.ModificarUsuario(id, nombre, apellido, apellido2, email, telefono);
+      
+        }
 
         //public static List<UsuarioModel> EliminarUsuario()
         //{
@@ -80,7 +71,7 @@ namespace CapaDOM
 
         //    foreach (DataRow row in dt.Rows)
         //    {
-        //        lista.Add(new UsuarioModel(row));
+        //        lista.Remove(new UsuarioModel(row));
         //    }
 
         //    return lista;

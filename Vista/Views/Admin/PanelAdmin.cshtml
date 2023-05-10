@@ -2,14 +2,13 @@
 @{
     ViewData["Title"] = "Panel de administrador";
 }
+
 <div class="container">
     <div class="table-responsive">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8"><h2>Usuarios</h2></div>
-                    <div class="col-sm-4">
-                    </div>
                 </div>
             </div>
             <table class="table table-striped table-hover table-bordered">
@@ -51,8 +50,6 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8"><h2>Gatos</h2></div>
-                    <div class="col-sm-4">
-                    </div>
                 </div>
             </div>
             <table class="table table-striped table-hover table-bordered">
@@ -96,8 +93,6 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8"><h2>Formularios</h2></div>
-                    <div class="col-sm-4">
-                    </div>
                 </div>
             </div>
             <table class="table table-striped table-hover table-bordered">
@@ -135,20 +130,9 @@
         </div>
     </div>
 </div>
-
-<div id="modalEliminarGato" class="modal">
-    <div class="contenido-modal">
-        <span class="cerrarModal">&times;</span>
-        <h2>Confirmar eliminación</h2>
-        <p>¿Estás seguro/a de que quieres eliminar a este gato?</p>
-         <button class="yes">Sí</button>
-        <button class="no">No</button>
-    </div>
-</div>
-
 <div id="modalEliminarUsuario" class="modal">
     <div class="contenido-modal">
-        <span class="cerrarModal">&times;</span>
+        <span id="cerrarModalUsuario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este usuario?</p>
         <button class="yes">Sí</button>
@@ -156,12 +140,24 @@
     </div>
 </div>
 
+<div id="modalEliminarGato" class="modal">
+    <div class="contenido-modal">
+        <span id="cerrarModalGato">&times;</span>
+        <h2>Confirmar eliminación</h2>
+        <p>¿Estás seguro/a de que quieres eliminar a este gato?</p>
+         <button class="yes">Sí</button>
+        <button class="no">No</button>
+    </div>
+</div>
+
 <div id="modalEliminarFormulario" class="modal">
     <div class="contenido-modal">
-        <span class="cerrarModal">&times;</span>
+        <span id="cerrarModalFormulario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar este formulario?</p>
         <button class="yes">Sí</button>
         <button class="no">No</button>
     </div>
 </div>
+
+<script src="~/js/paneladmin.js"></script>
