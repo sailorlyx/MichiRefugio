@@ -24,11 +24,11 @@ namespace CapaSOPORTE
         {
             if (genero == "M")
             {
-                return "macho";
+                return "Macho";
             }
             else
             {
-                return "hembra";
+                return "Hembra";
             }
         }
 

@@ -28,6 +28,24 @@ h2 {
 .logo {
 }
 
+.card-body1 {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/012/105/085/original/woman-with-cat-one-line-art-drawing-vector.jpg');
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.card-body2 {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background-image: url('https://i.pinimg.com/736x/f4/9d/99/f49d99083e0e6c9098a68d9d0779f959.jpg');
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .gatos1, .gatos2 {
     margin-top: 50px;
     text-align:center;

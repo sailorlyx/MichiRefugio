@@ -58,12 +58,18 @@ namespace CapaACCESODATOS
             {
                 procedureowo.Connection.Open();
                 return procedureowo.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                Console.Error.WriteLine(e.StackTrace);
             }
             finally
             {
                 procedureowo.Connection.Dispose();
                 procedureowo.Connection.Close();
             }
+            return -1;
         }
 
         public static string CreateConnection()

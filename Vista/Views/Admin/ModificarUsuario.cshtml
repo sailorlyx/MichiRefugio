@@ -5,9 +5,10 @@
 <div class="col-xl-8">
     <div class="card mb-4">
         <div class="card-header">Modificar usuario</div>
-        <div class="card-body">
-            @using (Html.BeginForm("ModificarUsuario", "Admin", FormMethod.Post))
+        <div class="card-body1">
+            @using (Html.BeginForm("GuardarModiUsuario", "Admin", FormMethod.Post))
             {
+                @Html.HiddenFor(gatito => gatito.id)
                 <div class="row gx-3 mb-3">
                     <div class="col-md-6">
                         @Html.TextBoxFor(usuario => usuario.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
@@ -38,10 +39,9 @@
                         @Html.ValidationMessageFor(usuario => usuario.telefono)
                     </div>
                 </div>
-                <button class="btn btn-secondary" type="button">Guardar</button>
+                <input onclick="GuardarModiUsuario" class="btn btn-secondary" type="submit" value="Guardar">
             }
         </div>
-        <img class="modificarmichi" src="https://static.vecteezy.com/system/resources/previews/012/105/085/original/woman-with-cat-one-line-art-drawing-vector.jpg" alt="michimiau" />
     </div>
     </div>
 

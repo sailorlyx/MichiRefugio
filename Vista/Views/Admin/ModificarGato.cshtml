@@ -6,9 +6,10 @@
     <div class="col-xl-8">
         <div class="card mb-4">
             <div class="card-header">Modificar gato</div>
-            <div class="card-body">
-                @using (Html.BeginForm("Modificar", "Admin", FormMethod.Post))
+            <div class="card-body2">
+                @using (Html.BeginForm("GuardarModiGato", "Admin", FormMethod.Post))
                 {
+                    @Html.HiddenFor(gatito => gatito.id);
                     <div class="row gx-3 mb-3">
                     <div class="col-md-6">
                         @Html.TextBoxFor(gatito => gatito.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
@@ -17,6 +18,7 @@
                     </div>
                     <div class="row gx-3 mb-3">
                         <div class="col-md-6">
+                            @Html.LabelFor(gatito => gatito.edad)
                             @Html.TextBoxFor(gatito => gatito.edad, new {@class = "form-control", @id="floatingInput", @placeholder="Edad"})
                             @Html.ValidationMessageFor(gatito => gatito.edad)
                         </div>
@@ -29,7 +31,8 @@
                     </div>
                     <div class="row gx-3 mb-3">
                         <div class="col-md-6">
-                            @Html.TextBoxFor(gatito => gatito.adoptado, new {@class = "form-control", @id="floatingInput", @placeholder="Adoptado"})
+                            @Html.CheckBoxFor(gatito => gatito.adoptado, new {@class = "form-check-input", @id="floatingInput", @placeholder="Adoptado"})
+                            @Html.LabelFor(gatito => gatito.adoptado)
                             @Html.ValidationMessageFor(gatito => gatito.adoptado)
                         </div>
                     </div>
@@ -51,11 +54,10 @@
                             @Html.ValidationMessageFor(gatito => gatito.Odia)
                         </div>
                     </div>
-                    <button class="btn btn-secondary" type="button">Guardar</button>
+                    <input onclick="GuardarModiGato" class="btn btn-secondary" type="submit" value="Guardar">
                 }
             </div>
             <div class="col-xl-8">
-        <img class="modificarmichi" src="https://static.vecteezy.com/system/resources/previews/003/706/142/original/cat-in-continuous-line-art-drawing-style-minimalist-black-linear-sketch-isolated-on-white-background-illustration-vector.jpg" alt="michimiau" />
         </div>
         </div>
     </div>

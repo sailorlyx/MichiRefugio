@@ -58,9 +58,10 @@ namespace CapaDOM
             return lista;
         }
 
-        public static void ModificarUsuario(int id, string nombre, string apellido, string apellido2, string email, string telefono) {
-            DAC_USUARIO.ModificarUsuario(id, nombre, apellido, apellido2, email, telefono);
-      
+        public static UsuarioModel ModificarUsuario(UsuarioModel usu) 
+        {
+            DAC_USUARIO.ModificarUsuario(usu.id, usu.nombre, usu.apellido, usu.apellido2, usu.email, usu.telefono);
+            return usu;
         }
 
         //public static List<UsuarioModel> EliminarUsuario()

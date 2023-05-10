@@ -54,6 +54,7 @@ namespace CapaACCESODATOS
             SqlCommand comando = MetodosDatos.CrearComando();
             comando.CommandText = "UPDATE USUARIO SET nombre = @nombre, apellido = @apellido, apellido2 = @apellido2, email = @email, telefono = @telefono"
                + " WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@apellido", apellido);
             comando.Parameters.AddWithValue("@apellido2", apellido2);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -11,15 +12,19 @@ namespace CapaSOPORTE
     {
         public int id { get; set; }
         public string nombre { get; set; }
+        [DisplayName("Edad")]
         public byte edad { get; set; }
         public string genero { get; set; }
         public string descripcion { get; set; }
+        [DisplayName("Adoptado")]
         public bool adoptado { get; set; }
         public string foto { get; set; }
 
         public string Gusta { get; set; }
         public string Odia { get; set; }
 
+        public GatoModel()
+        { }
 
         public GatoModel(DataRow row)
         {

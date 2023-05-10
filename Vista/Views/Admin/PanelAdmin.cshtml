@@ -34,7 +34,7 @@
                             <td>@usuario.email</td>
                             <td>@usuario.telefono</td>
                             <td>
-                                <button onclick="location.href='ModificarUsuario'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
+                                <button onclick="location.href='ModificarUsuario/@usuario.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
                                 <button id="abrirEliminarUsuario" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
@@ -77,7 +77,7 @@
                             <td>@michi.Gusta</td>
                             <td>@michi.Odia</td>
                             <td>
-                                <button onclick="location.href='ModificarGato'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
+                                <button onclick="location.href='ModificarGato/@michi.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
                                 <button id="abrirEliminarGato" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>

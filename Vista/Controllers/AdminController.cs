@@ -1,6 +1,8 @@
-﻿using CapaDOM; 
+﻿using CapaACCESODATOS;
+using CapaDOM; 
 using CapaSOPORTE;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata.Ecma335;
 using System.Web;
 namespace Vista.Controllers
 {
@@ -15,13 +17,34 @@ namespace Vista.Controllers
             return View(listas);
         }
 
-        public ActionResult ModificarGato()
+        public ActionResult ModificarGato(int id)
         {
-            return View();
+            List<GatoModel> resultado = DOM_GATO.ObtenerGato(id);
+            GatoModel? gato = resultado.FirstOrDefault();
+
+            return View(gato);
         }
-        public ActionResult ModificarUsuario()
+
+        public ActionResult GuardarModiGato(GatoModel meow)
         {
-            return View();
+            DOM_GATO.ModificarGato(meow);
+
+            return View("ModificarGato");
+        }
+
+        public ActionResult ModificarUsuario(int id)
+        {
+            List<UsuarioModel> resultado = DOM_USUARIO.ObtenerUsuario(id);
+            UsuarioModel? usu = resultado.FirstOrDefault();
+
+            return View(usu);
+        }
+
+        public ActionResult GuardarModiUsuario(UsuarioModel usuario)
+        {
+            DOM_USUARIO.ModificarUsuario(usuario);
+
+            return View("ModificarUsuario");
         }
 
         public void ObtenerGatos()
@@ -42,19 +65,9 @@ namespace Vista.Controllers
 
         #region CRUD
 
-        //public void ModificarGato()
-        //{
-        //    listas.listaGatos = DOM_GATO.ModificarGato();
-        //}
-
         //public void EliminarGato()
         //{
         //    listas.listaGatos = DOM_GATO.EliminarGato();
-        //}
-
-        //public void ModificarUsuario()
-        //{
-        //    listas.listaGatos = DOM_USUARIO.ModificarUsuario();
         //}
 
         //public void EliminarUsuario()
