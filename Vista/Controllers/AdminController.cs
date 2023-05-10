@@ -44,7 +44,8 @@ namespace Vista.Controllers
         {
             DOM_USUARIO.ModificarUsuario(usuario);
 
-            return View("ModificarUsuario");
+            return RedirectToAction("PanelAdmin", "Admin");
+
         }
 
         public void ObtenerGatos()
