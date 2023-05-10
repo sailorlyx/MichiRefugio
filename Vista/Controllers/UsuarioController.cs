@@ -51,14 +51,13 @@ namespace Vista.Controllers
                 }
                 else
                 {
-                    //ViewBag.Message = "Usuario no encontrado";
+                    ViewBag.Message = "Usuario no encontrado o incorrecto";
                     return View("IniciarSesion", usu);
                 }
 
             }
             else
             {
-                //ViewBag.Message = "Email y/o contraseña incorrectos";
                 return View("IniciarSesion", usu);
             }
         }
@@ -84,7 +83,7 @@ namespace Vista.Controllers
             }
             else
             {
-                ViewBag.Message = "¡Usuario creado con éxito!";
+                //ViewBag.Message = "¡Usuario creado con éxito!";
                 return View("Registro");
             }
             
