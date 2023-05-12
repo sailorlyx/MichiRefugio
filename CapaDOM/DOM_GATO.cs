@@ -46,18 +46,11 @@ namespace CapaDOM
             return miau;
         }
 
-        //public static List<GatoModel> EliminarGato()
-        //{
-        //    DataTable dt = DAC_GATO.EliminarGato();
+        public static GatoModel EliminarGato(GatoModel misifu)
+        {
+            DAC_GATO.EliminarGato(misifu.id);
 
-        //    List<GatoModel> lista = new List<GatoModel>();
-
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        lista.Remove(new GatoModel(row));
-        //    }
-
-        //    return lista;
-        //}
+            return misifu;
+        }
     }
 }

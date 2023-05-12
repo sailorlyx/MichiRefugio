@@ -32,6 +32,12 @@ namespace Vista.Controllers
             return View("ModificarGato");
         }
 
+        //public ActionResult EliminarGato(int id)
+        //{
+        //   DOM_GATO.EliminarGato(id);
+        //   return View("PanelAdmin");
+        //}
+
         public ActionResult ModificarUsuario(int id)
         {
             List<UsuarioModel> resultado = DOM_USUARIO.ObtenerUsuario(id);
@@ -66,10 +72,7 @@ namespace Vista.Controllers
 
         #region CRUD
 
-        //public void EliminarGato()
-        //{
-        //    listas.listaGatos = DOM_GATO.EliminarGato();
-        //}
+
 
         //public void EliminarUsuario()
         //{
