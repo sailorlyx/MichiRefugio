@@ -1,10 +1,12 @@
 ﻿var modalEliminarUsuario = document.getElementById('modalEliminarUsuario');
-var botonEliminarUsuario = document.getElementById('abrirEliminarUsuario');
+var botonesEliminarUsuario = document.getElementsByClassName('abrirEliminarUsuario');
 var cerrarModalUsuario = document.getElementById("cerrarModalUsuario");
 
-botonEliminarUsuario.onclick = function () {
-    modalEliminarUsuario.style.display = "block";
-}
+Array.from(botonesEliminarUsuario).forEach(boton => {
+    boton.onclick = function () {
+        modalEliminarUsuario.style.display = "block";
+    }
+});
 
 cerrarModalUsuario.onclick = function () {
     modalEliminarUsuario.style.display = "none";
@@ -17,12 +19,14 @@ window.onclick = function (event) {
 }
 
 var modalEliminarGato = document.getElementById('modalEliminarGato');
-var botonEliminarGato = document.getElementsByClassName('abrirEliminarGato');
+var botonesEliminarGato = document.getElementsByClassName('abrirEliminarGato');
 var cerrarModalGato = document.getElementById("cerrarModalGato");
 
-botonEliminarGato.onclick = function () {
-    modalEliminarGato.style.display = "block";
-}
+Array.from(botonesEliminarGato).forEach(boton => {
+    boton.onclick = function () {
+        modalEliminarGato.style.display = "block";
+    }
+});
 
 cerrarModalGato.onclick = function () {
     modalEliminarGato.style.display = "none";
@@ -35,12 +39,14 @@ window.onclick = function (event) {
 }
 
 var modalEliminarFormulario = document.getElementById('modalEliminarFormulario');
-var botonEliminarFormulario = document.getElementsByClassName('abrirEliminarFormulario');
+var botonesEliminarFormulario = document.getElementsByClassName('abrirEliminarFormulario');
 var cerrarModalFormulario = document.getElementById("cerrarModalFormulario");
 
-botonEliminarFormulario.onclick = function () {
-    modalEliminarFormulario.style.display = "block";
-}
+Array.from(botonesEliminarFormulario).forEach(boton => {
+    boton.onclick = function () {
+        modalEliminarFormulario.style.display = "block";
+    }
+});
 
 cerrarModalFormulario.onclick = function () {
     modalEliminarFormulario.style.display = "none";

@@ -64,10 +64,9 @@ namespace CapaDOM
             return usu;
         }
 
-        public static UsuarioModel EliminarUsuario(UsuarioModel usuariooo)
+        public static void EliminarUsuario(int id)
         {
-            DAC_USUARIO.EliminarUsuario(usuariooo.id);
-            return usuariooo;
+            DAC_USUARIO.EliminarUsuario(id);
         }
     }
 }

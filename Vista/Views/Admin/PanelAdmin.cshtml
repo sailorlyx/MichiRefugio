@@ -34,7 +34,7 @@
                             <td>@usuario.telefono</td>
                             <td>
                                 <button onclick="location.href='ModificarUsuario/@usuario.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
-                                <button id="abrirEliminarUsuario" type="button" class="btn btn-danger delete-btn" title="Eliminar">&#9587;</button>
+                                <button type="button" class="btn btn-danger delete-btn abrirEliminarUsuario" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -77,7 +77,7 @@
                             <td>@michi.Odia</td>
                             <td>
                                 <button onclick="location.href='ModificarGato/@michi.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
-                                <button id="abrirEliminarGato" type="button" class="btn btn-danger delete-btn abrirEliminarGato" title="Eliminar">&#9587;</button>
+                                <button type="button" class="btn btn-danger delete-btn abrirEliminarGato" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -117,10 +117,10 @@
                             <td>@formu.apellido2</td>
                             <td>@formu.email</td>
                             <td>@formu.telefono</td>
-                            <td>Sobre ti</td>
+                            <td>@formu.sobreti</td>
                         
                         <td>
-                                <button id="abrirEliminaFormulario" type="button" class="btn btn-danger delete-btn abrirEliminaFormulario" title="Eliminar">&#9587;</button>
+                            <button type="button" class="btn btn-danger delete-btn abrirEliminarFormulario" title="Eliminar">&#9587;</button>
                         </td>
                         </tr>
                     }
@@ -134,8 +134,8 @@
         <span id="cerrarModalUsuario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este usuario?</p>
-        <button class="yes">Sí</button>
-        <button class="no">No</button>
+        <button onclick="location.href='EliminarUsuario'" class="yes">Sí</button>
+        <button onclick="modalEliminarUsuario.style.display='none'" class="no">No</button>
     </div>
 </div>
 
@@ -144,8 +144,8 @@
         <span id="cerrarModalGato">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este gato?</p>
-         <button class="yes">Sí</button>
-        <button class="no">No</button>
+        <button onclick="location.href='EliminarGato'" class="yes">Sí</button>
+        <button onclick="modalEliminarGato.style.display='none'" class="no">No</button>
     </div>
 </div>
 
@@ -154,8 +154,8 @@
         <span id="cerrarModalFormulario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar este formulario?</p>
-        <button class="yes">Sí</button>
-        <button class="no">No</button>
+        <button onclick="location.href='EliminarFormulario'" class="yes">Sí</button>
+        <button onclick="modalEliminarFormulario.style.display='none'" class="no">No</button>
     </div>
 </div>
 

@@ -44,6 +44,7 @@ namespace Vista.Controllers
                 lista.formularioUsu.apellido2 = usuActual.apellido2;
                 lista.formularioUsu.email = usuActual.email;
                 lista.formularioUsu.telefono = usuActual.telefono;
+
             }
 
             DOM_FORMULARIO.GuardarFormulario(lista.formularioUsu);

@@ -46,11 +46,9 @@ namespace CapaDOM
             return miau;
         }
 
-        public static GatoModel EliminarGato(GatoModel misifu)
+        public static void EliminarGato(int id)
         {
-            DAC_GATO.EliminarGato(misifu.id);
-
-            return misifu;
+            DAC_GATO.EliminarGato(id);
         }
     }
 }
