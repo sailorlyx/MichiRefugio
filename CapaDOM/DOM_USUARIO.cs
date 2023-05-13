@@ -64,18 +64,10 @@ namespace CapaDOM
             return usu;
         }
 
-        //public static List<UsuarioModel> EliminarUsuario()
-        //{
-        //    DataTable dt = DAC_USUARIO.EliminarUsuario();
-
-        //    List<UsuarioModel> lista = new List<UsuarioModel>();
-
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        lista.Remove(new UsuarioModel(row));
-        //    }
-
-        //    return lista;
-        //}
+        public static UsuarioModel EliminarUsuario(UsuarioModel usuariooo)
+        {
+            DAC_USUARIO.EliminarUsuario(usuariooo.id);
+            return usuariooo;
+        }
     }
 }

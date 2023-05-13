@@ -65,14 +65,14 @@ namespace CapaACCESODATOS
 
         }
 
-        //public static int EliminarUsuario(int id)
-        //{
-        //    SqlCommand comando = MetodosDatos.CrearComando();
-        //    comando.CommandText = "DELETE FROM USUARIO WHERE id = @id";
-        //    comando.Parameters.AddWithValue("@id", id);
+        public static int EliminarUsuario(int id)
+        {
+            SqlCommand comando = MetodosDatos.CrearComando();
+            comando.CommandText = "DELETE FROM USUARIO WHERE id = @id";
+            comando.Parameters.AddWithValue("@id", id);
 
-        //    return MetodosDatos.EjecutarComandoInsert(comando);
-        //}
+            return MetodosDatos.EjecutarComandoInsert(comando);
+        }
 
     }
 

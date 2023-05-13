@@ -51,13 +51,13 @@ namespace Vista.Controllers
                 }
                 else
                 {
-                    ViewBag.Message = "Usuario no encontrado o incorrecto";
                     return View("IniciarSesion", usu);
                 }
 
             }
             else
             {
+
                 return View("IniciarSesion", usu);
             }
         }
@@ -65,26 +65,30 @@ namespace Vista.Controllers
         [HttpPost]
         public ActionResult Registrar(UsuarioModel usuregistro)
         {
+            string mensaje1 = "Este usuario ya existe o no es correcto, por favor, asegúrese de que sus datos son válidos.";
+            string mensaje2 = "¡Usuario creado con éxito!";
+         
             if (ModelState.IsValid)
             {
                 ConseguirUsuarioPorEmail(usuregistro.email);
 
                 if (listas.listaUsuarios.Count == 0)
                 {
+                    ViewBag.Message = mensaje2;
                     DOM_USUARIO.RegistrarUsuario(usuregistro.nombre, usuregistro.apellido, usuregistro.apellido2, usuregistro.email, usuregistro.contraseña, usuregistro.telefono);
                     return RedirectToAction("Index", "Gato");
                 }
                 else
                 {
-                    ViewBag.Message = "Este usuario ya existe, por favor, asegúrese de que sus datos son correctos.";
+                    ViewBag.Message = mensaje2;
                     return View("Registro", usuregistro);
                 }
                
             }
             else
             {
-                //ViewBag.Message = "¡Usuario creado con éxito!";
-                return View("Registro");
+                ViewBag.Message = mensaje1;
+                return View();
             }
             
         }
