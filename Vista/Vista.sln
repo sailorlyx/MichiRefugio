@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaSOPORTE", "..\CapaSOPOR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaDOM", "..\CapaDOM\CapaDOM.csproj", "{821D8288-B640-4CE5-9AB3-08BAF71F3F59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MichiRefuTESTS", "..\MichiRefuTESTS\MichiRefuTESTS.csproj", "{045D5C0C-2E63-4F8E-A33C-182879702E5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{821D8288-B640-4CE5-9AB3-08BAF71F3F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{821D8288-B640-4CE5-9AB3-08BAF71F3F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{821D8288-B640-4CE5-9AB3-08BAF71F3F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045D5C0C-2E63-4F8E-A33C-182879702E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045D5C0C-2E63-4F8E-A33C-182879702E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045D5C0C-2E63-4F8E-A33C-182879702E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045D5C0C-2E63-4F8E-A33C-182879702E5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

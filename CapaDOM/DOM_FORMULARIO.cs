@@ -25,12 +25,12 @@ namespace CapaDOM
             DAC_FORMULARIO.GuardarFormulario(formulario.nombre, formulario.apellido, formulario.apellido2, formulario.email, formulario.telefono, formulario.idGato);
         }
 
-        public static void EliminarFormulario(FormularioModel formu)
-        {
-            DAC_FORMULARIO.EliminarFormulario(formu.id);
+        //public static void EliminarFormulario(FormularioModel formu)
+        //{
+        //    DAC_FORMULARIO.EliminarFormulario(formu.id);
 
-            return formu;
-        }
+        //    return formu;
+        //}
 
     }
 }

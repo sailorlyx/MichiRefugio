@@ -32,11 +32,11 @@ namespace Vista.Controllers
             return View("ModificarGato");
         }
 
-        public ActionResult EliminarGato(int id)
-        {
-            DOM_GATO.EliminarGato(id);
-            return View("PanelAdmin");
-        }
+        //public ActionResult EliminarGato(int id)
+        //{
+        //    DOM_GATO.EliminarGato(id);
+        //    return View("PanelAdmin");
+        //}
 
         public ActionResult ModificarUsuario(int id)
         {
@@ -54,18 +54,18 @@ namespace Vista.Controllers
 
         }
 
-        public ActionResult EliminarUsuario(int id)
-        {
-            DOM_USUARIO.EliminarUsuario(id);
-            return View("PanelAdmin");
+        //public ActionResult EliminarUsuario(int id)
+        //{
+        //    DOM_USUARIO.EliminarUsuario(id);
+        //    return View("PanelAdmin");
 
-        }
+        //}
 
-        public ActionResult EliminarFormulario(int id)
-        {
-            DOM_FORMULARIO.EliminarFormulario(id);
-            return View("PanelAdmin");
-        }
+        //public ActionResult EliminarFormulario(int id)
+        //{
+        //    DOM_FORMULARIO.EliminarFormulario(id);
+        //    return View("PanelAdmin");
+        //}
 
         public void ObtenerGatos()
         {
