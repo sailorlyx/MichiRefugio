@@ -57,3 +57,23 @@ window.onclick = function (event) {
         modalEliminarFormulario.style.display = "none";
     }
 }
+
+
+function AbrirEliminarUsu(id) {
+    window.idUsu = id;
+    alert(id);
+    modalEliminarUsuario.style.display = "block";
+}
+
+function EliminarUsu() {
+    alert(window.idUsu);
+    location.href = 'EliminarUsuario/' + window.idUsu;
+}
+
+function EliminarMichi(id) {
+    location.href = 'EliminarMichi/' + id;
+}
+
+function EliminarFormu(id) {
+    location.href = 'EliminarFormulario/' + id;
+}

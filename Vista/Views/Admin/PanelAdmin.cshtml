@@ -34,7 +34,7 @@
                             <td>@usuario.telefono</td>
                             <td>
                                 <button onclick="location.href='ModificarUsuario/@usuario.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
-                                <button type="button" class="btn btn-danger delete-btn abrirEliminarUsuario" title="Eliminar">&#9587;</button>
+                                <button onclick="()=>AbrirEliminarUsu(@usuario.id)" type="button" class="btn btn-danger delete-btn abrirEliminarUsuario" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -134,7 +134,7 @@
         <span id="cerrarModalUsuario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este usuario?</p>
-        <button onclick="location.href='EliminarUsuario'" class="yes">Sí</button>
+        <button onclick="EliminarUsu()" class="yes">Sí</button>
         <button onclick="modalEliminarUsuario.style.display='none'" class="no">No</button>
     </div>
 </div>
