@@ -46,6 +46,15 @@ h2 {
     background-position: right;
 }
 
+.card-body3 {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    background-image: url('https://i.pinimg.com/originals/af/be/0b/afbe0b5518ea325e93c002ebd10bcff3.jpg');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
 .gatos1, .gatos2 {
     margin-top: 50px;
     text-align:center;

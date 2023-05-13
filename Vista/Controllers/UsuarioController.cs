@@ -35,6 +35,14 @@ namespace Vista.Controllers
             return View();
         }
 
+        public ActionResult ModificarUsuario(int id)
+        {
+            List<UsuarioModel> resultado = DOM_USUARIO.ObtenerUsuario(id);
+            UsuarioModel? usu = resultado.FirstOrDefault();
+
+            return View(usu);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult IniciarSesion(InicioSesionModel usu)

@@ -40,11 +40,10 @@
         <span class="visually-hidden">Siguiente</span>
     </button>
 </div>
-
 <div class="gatos1">
     <div class="container marketing">
         <div class="row">
-            @foreach(var item in Model.listaGatos)
+            @foreach (var item in Model.listaGatos)
             {
                 <div class="col-lg-4">
                     <img src="@item.foto" alt="mdo" width="140" height="140" class="rounded-circle">
@@ -58,7 +57,6 @@
                     {
                         <p>@item.edad año</p>
                     }
-                    
                     <p><a class="btn btn-secondary" asp-controller="Gato" asp-action="FichaGato" asp-route-id="@item.id">Saber más &raquo;</a></p>
                 </div>
             }
