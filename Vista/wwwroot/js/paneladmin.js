@@ -17,7 +17,7 @@ window.onclick = function (event) {
 }
 
 var modalEliminarGato = document.getElementById('modalEliminarGato');
-var botonEliminarGato = document.getElementById('abrirEliminarGato');
+var botonEliminarGato = document.getElementsByClassName('abrirEliminarGato');
 var cerrarModalGato = document.getElementById("cerrarModalGato");
 
 botonEliminarGato.onclick = function () {
@@ -35,7 +35,7 @@ window.onclick = function (event) {
 }
 
 var modalEliminarFormulario = document.getElementById('modalEliminarFormulario');
-var botonEliminarFormulario = document.getElementById('abrirEliminarFormulario');
+var botonEliminarFormulario = document.getElementsByClassName('abrirEliminarFormulario');
 var cerrarModalFormulario = document.getElementById("cerrarModalFormulario");
 
 botonEliminarFormulario.onclick = function () {
