@@ -15,7 +15,6 @@ window.onclick = function (event) {
 }
 
 function AbrirEliminarUsu(id) {
-    window.idUsu = id;
     console.log(id)
     modalEliminarUsuario.style.display = "block";
     botonYesUsu.onclick = function () {
@@ -27,35 +26,6 @@ function AbrirEliminarUsu(id) {
 function EliminarUsu(id) {
     location.href = 'EliminarUsuario/' + id;
 }
-
-var modalEliminarGato = document.getElementById('modalEliminarGato');
-var botonesEliminarGato = document.getElementsByClassName('abrirEliminarGato');
-var cerrarModalGato = document.getElementById("cerrarModalGato");
-var botonYesGato = document.getElementsByClassName("yesGato")[0];
-
-cerrarModalGato.onclick = function () {
-    modalEliminarGato.style.display = "none";
-}
-
-window.onclick = function (event) {
-    if (event.target === modalEliminarGato) {
-        modalEliminarGato.style.display = "none";
-    }
-}
-
-function AbrirEliminarGato(id) {
-    window.idUsu = id;
-    modalEliminarGato.style.display = "block";
-    botonYesGato.onclick = function () {
-        console.log(id)
-        EliminarGato(id);
-    }
-}
-
-function EliminarGato(id) {
-    location.href = 'EliminarGato/' + id;
-}
-
 
 var modalEliminarFormulario = document.getElementById('modalEliminarFormulario');
 var botonesEliminarFormulario = document.getElementsByClassName('abrirEliminarFormulario');

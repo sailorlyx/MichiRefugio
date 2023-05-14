@@ -32,12 +32,6 @@ namespace Vista.Controllers
             return View("ModificarGato");
         }
 
-        public ActionResult EliminarGato(int id)
-        {
-            DOM_GATO.EliminarGato(id);
-            return RedirectToAction("PanelAdmin", "Admin");
-        }
-
         public ActionResult ModificarUsuario(int id)
         {
             List<UsuarioModel> resultado = DOM_USUARIO.ObtenerUsuario(id);

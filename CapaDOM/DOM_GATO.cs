@@ -45,10 +45,5 @@ namespace CapaDOM
             DAC_GATO.ModificarGato(miau.id, miau.nombre, miau.edad, miau.genero, miau.adoptado, miau.foto, miau.Gusta, miau.Odia);
             return miau;
         }
-
-        public static void EliminarGato(int id)
-        {
-            DAC_GATO.EliminarGato(id);
-        }
     }
 }

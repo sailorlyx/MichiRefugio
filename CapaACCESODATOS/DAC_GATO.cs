@@ -44,14 +44,5 @@ namespace CapaACCESODATOS
             return MetodosDatos.EjecutarComandoInsert(comando);
 
         }
-
-        public static int EliminarGato(int id)
-        {
-            SqlCommand comando = MetodosDatos.CrearComando();
-            comando.CommandText = "DELETE FROM GATO WHERE id = @id";
-            comando.Parameters.AddWithValue("@id", id);
-
-            return MetodosDatos.EjecutarComandoInsert(comando);
-        }
     }
 }
