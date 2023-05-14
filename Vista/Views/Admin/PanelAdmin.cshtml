@@ -34,7 +34,7 @@
                             <td>@usuario.telefono</td>
                             <td>
                                 <button onclick="location.href='ModificarUsuario/@usuario.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
-                                <button onclick="()=>AbrirEliminarUsu(@usuario.id)" type="button" class="btn btn-danger delete-btn abrirEliminarUsuario" title="Eliminar">&#9587;</button>
+                                <button onclick="AbrirEliminarUsu(@usuario.id)" type="button" class="btn btn-danger delete-btn abrirEliminarUsuario" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -77,7 +77,7 @@
                             <td>@michi.Odia</td>
                             <td>
                                 <button onclick="location.href='ModificarGato/@michi.id'" class="btn btn-primary edit-btn" title="Modificar">&#9998;</button>
-                                <button type="button" class="btn btn-danger delete-btn abrirEliminarGato" title="Eliminar">&#9587;</button>
+                                <button onclick="AbrirEliminarGato(@michi.id)" type="button" class="btn btn-danger delete-btn abrirEliminarGato" title="Eliminar">&#9587;</button>
                             </td>
                         </tr>
                     }
@@ -98,6 +98,7 @@
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>ID Gato</th>
                         <th>Nombre</th>
                         <th>Primer apellido</th>
                         <th>Segundo apellido</th>
@@ -112,6 +113,7 @@
                     {
                         <tr>
                             <td>@formu.id</td>
+                            <td>@formu.idGato</td>
                             <td>@formu.nombre</td>
                             <td>@formu.apellido</td>
                             <td>@formu.apellido2</td>
@@ -120,7 +122,7 @@
                             <td>@formu.sobreti</td>
                         
                         <td>
-                            <button type="button" class="btn btn-danger delete-btn abrirEliminarFormulario" title="Eliminar">&#9587;</button>
+                                <button onclick="AbrirEliminarFormu(@formu.id)" type="button" class="btn btn-danger delete-btn abrirEliminarFormulario" title="Eliminar">&#9587;</button>
                         </td>
                         </tr>
                     }
@@ -134,7 +136,7 @@
         <span id="cerrarModalUsuario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este usuario?</p>
-        <button onclick="EliminarUsu()" class="yes">Sí</button>
+        <button class="yesUsu">Sí</button>
         <button onclick="modalEliminarUsuario.style.display='none'" class="no">No</button>
     </div>
 </div>
@@ -144,7 +146,7 @@
         <span id="cerrarModalGato">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar a este gato?</p>
-        <button onclick="location.href='EliminarGato'" class="yes">Sí</button>
+        <button class="yesGato">Sí</button>
         <button onclick="modalEliminarGato.style.display='none'" class="no">No</button>
     </div>
 </div>
@@ -154,7 +156,7 @@
         <span id="cerrarModalFormulario">&times;</span>
         <h2>Confirmar eliminación</h2>
         <p>¿Estás seguro/a de que quieres eliminar este formulario?</p>
-        <button onclick="location.href='EliminarFormulario'" class="yes">Sí</button>
+        <button class="yesFormu">Sí</button>
         <button onclick="modalEliminarFormulario.style.display='none'" class="no">No</button>
     </div>
 </div>

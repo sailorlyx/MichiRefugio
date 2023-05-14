@@ -18,8 +18,18 @@ namespace Vista.Controllers
             return View("Registro");
         }
 
-        public ActionResult PerfilUsuarioView()
+        public ActionResult PerfilUsuario()
         {
+            string nombreEmail = HttpContext.Session.GetString("NombreEmail");
+            UsuarioModel usuActual = DOM_USUARIO.ConseguirUsuarioPorEmail(nombreEmail).FirstOrDefault();
+
+            return View(usuActual);
+        }
+
+        public ActionResult GuardarModiUsu(UsuarioModel usuario)
+        {
+            DOM_USUARIO.ModificarUsuario(usuario);
+
             return View("PerfilUsuario");
         }
 
@@ -35,13 +45,6 @@ namespace Vista.Controllers
             return View();
         }
 
-        public ActionResult ModificarUsuario(int id)
-        {
-            List<UsuarioModel> resultado = DOM_USUARIO.ObtenerUsuario(id);
-            UsuarioModel? usu = resultado.FirstOrDefault();
-
-            return View(usu);
-        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]

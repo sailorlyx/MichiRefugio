@@ -61,7 +61,7 @@ namespace Vista.Controllers
 
         }
 
-        public ActionResult EliminarFormulario(int id)
+        public ActionResult EliminarFormu(int id)
         {
             DOM_FORMULARIO.EliminarFormulario(id);
             return RedirectToAction("PanelAdmin", "Admin");

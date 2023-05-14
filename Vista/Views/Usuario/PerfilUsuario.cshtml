@@ -5,8 +5,9 @@
 <div class="card mb-4">
     <div class="card-header">Detalles de la cuenta</div>
     <div class="card-body3">
-        @using (Html.BeginForm("PerfilUsuario", "Usuario", FormMethod.Post))
+        @using (Html.BeginForm("GuardarModiUsu", "Usuario", FormMethod.Post))
         {
+            @Html.HiddenFor(modelo => modelo.id);
             <div class="row gx-3 mb-3">
                 <div class="col-md-6">
                     @Html.TextBoxFor(modelo => modelo.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
@@ -37,7 +38,7 @@
                     @Html.ValidationMessageFor(modelo => modelo.telefono)
                 </div>
             </div>
-            <button onclick="GuardarDatosPerfil" class="btn btn-secondary" type="button">Guardar</button>
+            <input onclick="GuardarModiUsu" class="btn btn-secondary" type="submit" value="Guardar">
         }
     </div>
 </div>

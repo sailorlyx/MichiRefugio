@@ -31,7 +31,7 @@
                             <img src="/img/usuarionoregistrado.png" alt="mdo" width="32" height="32" class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu text-small">
-                            <li><a class="dropdown-item" asp-controller="Usuario" asp-action="PerfilUsuarioView">&#9881 Perfil</a></li>
+                            <li><a class="dropdown-item" asp-controller="Usuario" asp-action="PerfilUsuario">&#9881 Perfil</a></li>
                             <li><hr class="dropdown-divider"></li>
                             @if (@Accessor.HttpContext.Session.GetString("admin") == "True")
                             {
