@@ -8,24 +8,34 @@
         @using (Html.BeginForm("PerfilUsuario", "Usuario", FormMethod.Post))
         {
             <div class="row gx-3 mb-3">
-                @Html.TextBoxFor(modelo => modelo.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
-                @Html.ValidationMessageFor(modelo => modelo.nombre)
+                <div class="col-md-6">
+                    @Html.TextBoxFor(modelo => modelo.nombre, new {@class = "form-control", @id="floatingInput", @placeholder="Nombre"})
+                    @Html.ValidationMessageFor(modelo => modelo.nombre)
+                </div>
             </div>
             <div class="row gx-3 mb-3">
-                @Html.TextBoxFor(modelo => modelo.apellido, new {@class = "form-control", @id="floatingInput", @placeholder="Primer apellido"})
-                @Html.ValidationMessageFor(modelo => modelo.apellido)
+                <div class="col-md-6">
+                    @Html.TextBoxFor(modelo => modelo.apellido, new {@class = "form-control", @id="floatingInput", @placeholder="Primer apellido"})
+                    @Html.ValidationMessageFor(modelo => modelo.apellido)
+                </div>
             </div>
             <div class="row gx-3 mb-3">
-                @Html.TextBoxFor(modelo => modelo.apellido2, new {@class = "form-control", @id="floatingInput", @placeholder="Segundo apellido"})
-                @Html.ValidationMessageFor(modelo => modelo.apellido2)
+                <div class="col-md-6">
+                    @Html.TextBoxFor(modelo => modelo.apellido2, new {@class = "form-control", @id="floatingInput", @placeholder="Segundo apellido"})
+                    @Html.ValidationMessageFor(modelo => modelo.apellido2)
+                </div>
             </div>
             <div class="row gx-3 mb-3">
-                @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email"})
-                @Html.ValidationMessageFor(modelo => modelo.email)
+                <div class="col-md-6">
+                    @Html.TextBoxFor(modelo => modelo.email, new {@class = "form-control", @id="floatingInput", @placeholder="Email"})
+                    @Html.ValidationMessageFor(modelo => modelo.email)
+                </div>
             </div>
             <div class="row gx-3 mb-3">
-                @Html.TextBoxFor(modelo => modelo.telefono, new {@class = "form-control", @id="floatingInput", @placeholder="Teléfono"})
-                @Html.ValidationMessageFor(modelo => modelo.telefono)
+                <div class="col-md-6">
+                    @Html.TextBoxFor(modelo => modelo.telefono, new {@class = "form-control", @id="floatingInput", @placeholder="Teléfono"})
+                    @Html.ValidationMessageFor(modelo => modelo.telefono)
+                </div>
             </div>
             <button onclick="GuardarDatosPerfil" class="btn btn-secondary" type="button">Guardar</button>
         }
